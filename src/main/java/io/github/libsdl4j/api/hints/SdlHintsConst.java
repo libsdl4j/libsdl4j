@@ -1088,6 +1088,17 @@ public final class SdlHintsConst {
     public static final String SDL_HINT_JOYSTICK_THREAD = "SDL_JOYSTICK_THREAD";
 
     /**
+     * A variable controlling whether Windows.Gaming.Input should be used for controller handling.
+     *
+     * <p>This variable can be set to the following values:</p>
+     * <pre>
+     * "0"       - WGI is not used
+     * "1"       - WGI is used (the default)
+     * </pre>
+     */
+    public static final String SDL_HINT_JOYSTICK_WGI = "SDL_JOYSTICK_WGI";
+
+    /**
      * Determines whether SDL enforces that DRM master is required in order
      * to initialize the KMSDRM video backend.
      *
