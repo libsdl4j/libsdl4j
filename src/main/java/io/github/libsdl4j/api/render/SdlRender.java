@@ -2200,7 +2200,7 @@ public final class SdlRender {
      * <p>Note that as of SDL 2.0.18, this will return null if Metal refuses to give
      * SDL a drawable to render to, which might happen if the window is
      * hidden/minimized/offscreen. This doesn't apply to command encoders for
-     * render targets, just the window's backbacker. Check your return values!</p>
+     * render targets, just the window's backbuffer. Check your return values!</p>
      *
      * @param renderer The renderer to query
      * @return an {@code id<MTLRenderCommandEncoder>} on success, or null if the
