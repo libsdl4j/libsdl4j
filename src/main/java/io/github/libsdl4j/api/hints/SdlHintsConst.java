@@ -1620,6 +1620,19 @@ public final class SdlHintsConst {
     public static final String SDL_HINT_RENDER_VSYNC = "SDL_RENDER_VSYNC";
 
     /**
+     * A variable controlling whether the Metal render driver select low power device over default one
+     *
+     * <p>This variable can be set to the following values:</p>
+     * <pre>
+     * "0"       - Use the prefered OS device
+     * "1"       - Select a low power one
+     * </pre>
+     *
+     * <p>By default the preferred OS device is used.</p>
+     */
+    public static final String SDL_HINT_RENDER_METAL_PREFER_LOW_POWER_DEVICE = "SDL_RENDER_METAL_PREFER_LOW_POWER_DEVICE";
+
+    /**
      * A variable controlling if VSYNC is automatically disable if doesn't reach the enough FPS
      *
      * <p>This variable can be set to the following values:</p>
