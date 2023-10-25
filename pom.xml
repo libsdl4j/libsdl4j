@@ -6,7 +6,7 @@
 
     <groupId>io.github.libsdl4j</groupId>
     <artifactId>libsdl4j</artifactId>
-    <version>2.28.3-1.5</version>
+    <version>2.28.4-1.6</version>
     <packaging>jar</packaging>
 
     <name>LibSDL4J</name>
