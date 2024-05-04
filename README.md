@@ -251,7 +251,8 @@ Amongst the omitted things are:
     header files and libraries would also need to be loaded,
     so it was left out of the scope of the project.
 * **SDL_opengl_\*.h**, **SDL_opengles_\*.h**, **SDL_egl.h**
-
+* **SDL_ttf.h**
+  * To render text, use TODO what?
 
 
 ## Implementation details
