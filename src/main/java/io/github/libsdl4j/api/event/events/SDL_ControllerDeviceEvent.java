@@ -7,6 +7,7 @@ import org.intellij.lang.annotations.MagicConstant;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEADDED;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEREMAPPED;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEREMOVED;
+import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERSTEAMHANDLEUPDATED;
 
 /**
  * Controller device event structure (event.cdevice.*)
@@ -20,17 +21,20 @@ public final class SDL_ControllerDeviceEvent extends Structure {
 
     /**
      * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERDEVICEADDED SDL_CONTROLLERDEVICEADDED},
-     * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERDEVICEREMOVED SDL_CONTROLLERDEVICEREMOVED}, or
-     * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERDEVICEREMAPPED SDL_CONTROLLERDEVICEREMAPPED}
+     * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERDEVICEREMOVED SDL_CONTROLLERDEVICEREMOVED},
+     * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERDEVICEREMAPPED SDL_CONTROLLERDEVICEREMAPPED}, or
+     * {@link io.github.libsdl4j.api.event.SDL_EventType#SDL_CONTROLLERSTEAMHANDLEUPDATED SDL_CONTROLLERSTEAMHANDLEUPDATED}
      */
-    @MagicConstant(intValues = {SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED})
+    @MagicConstant(intValues = {SDL_CONTROLLERDEVICEADDED, SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED, SDL_CONTROLLERSTEAMHANDLEUPDATED})
     public int type;
 
     /** In milliseconds, populated using SDL_GetTicks() */
     public int timestamp;
 
-    // TODO: Shouldn't it be SDL_JoystickID?
-    /** The joystick device index for the ADDED event, instance id for the REMOVED or REMAPPED event */
+    /**
+     * The joystick device index for the SDL_CONTROLLERDEVICEADDED event,
+     * SDL_JoystickID for the SDL_CONTROLLERDEVICEREMOVED, SDL_CONTROLLERDEVICEREMAPPED or SDL_CONTROLLERSTEAMHANDLEUPDATED event
+     */
     public int which;
 
     public SDL_ControllerDeviceEvent() {

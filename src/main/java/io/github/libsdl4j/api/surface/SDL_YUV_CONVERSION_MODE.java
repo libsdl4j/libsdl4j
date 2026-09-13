@@ -19,7 +19,19 @@ public final class SDL_YUV_CONVERSION_MODE implements JnaEnum {
     /** BT.601 for SD content, BT.709 for HD content */
     public static final int SDL_YUV_CONVERSION_AUTOMATIC = 3;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_YUV_CONVERSION_JPEG) {
+            return "SDL_YUV_CONVERSION_JPEG";
+        } else if (value == SDL_YUV_CONVERSION_BT601) {
+            return "SDL_YUV_CONVERSION_BT601";
+        } else if (value == SDL_YUV_CONVERSION_BT709) {
+            return "SDL_YUV_CONVERSION_BT709";
+        } else if (value == SDL_YUV_CONVERSION_AUTOMATIC) {
+            return "SDL_YUV_CONVERSION_AUTOMATIC";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_YUV_CONVERSION_MODE() {
     }

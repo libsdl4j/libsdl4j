@@ -37,7 +37,7 @@ public final class SDL_Keycode implements JnaEnum {
     public static final int SDLK_RIGHTPAREN = ')';
     public static final int SDLK_ASTERISK = '*';
     public static final int SDLK_PLUS = '+';
-    public static final int SDLK_COMMA = ';';
+    public static final int SDLK_COMMA = ',';
     public static final int SDLK_MINUS = '-';
     public static final int SDLK_PERIOD = '.';
     public static final int SDLK_SLASH = '/';
@@ -283,7 +283,499 @@ public final class SDL_Keycode implements JnaEnum {
     public static final int SDLK_CALL = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_CALL);
     public static final int SDLK_ENDCALL = SDL_SCANCODE_TO_KEYCODE(SDL_SCANCODE_ENDCALL);
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDLK_UNKNOWN) {
+            return "SDLK_UNKNOWN";
+        } else if (value == SDLK_RETURN) {
+            return "SDLK_RETURN";
+        } else if (value == SDLK_ESCAPE) {
+            return "SDLK_ESCAPE";
+        } else if (value == SDLK_BACKSPACE) {
+            return "SDLK_BACKSPACE";
+        } else if (value == SDLK_TAB) {
+            return "SDLK_TAB";
+        } else if (value == SDLK_SPACE) {
+            return "SDLK_SPACE";
+        } else if (value == SDLK_EXCLAIM) {
+            return "SDLK_EXCLAIM";
+        } else if (value == SDLK_QUOTEDBL) {
+            return "SDLK_QUOTEDBL";
+        } else if (value == SDLK_HASH) {
+            return "SDLK_HASH";
+        } else if (value == SDLK_PERCENT) {
+            return "SDLK_PERCENT";
+        } else if (value == SDLK_DOLLAR) {
+            return "SDLK_DOLLAR";
+        } else if (value == SDLK_AMPERSAND) {
+            return "SDLK_AMPERSAND";
+        } else if (value == SDLK_QUOTE) {
+            return "SDLK_QUOTE";
+        } else if (value == SDLK_LEFTPAREN) {
+            return "SDLK_LEFTPAREN";
+        } else if (value == SDLK_RIGHTPAREN) {
+            return "SDLK_RIGHTPAREN";
+        } else if (value == SDLK_ASTERISK) {
+            return "SDLK_ASTERISK";
+        } else if (value == SDLK_PLUS) {
+            return "SDLK_PLUS";
+        } else if (value == SDLK_COMMA) {
+            return "SDLK_COMMA";
+        } else if (value == SDLK_MINUS) {
+            return "SDLK_MINUS";
+        } else if (value == SDLK_PERIOD) {
+            return "SDLK_PERIOD";
+        } else if (value == SDLK_SLASH) {
+            return "SDLK_SLASH";
+        } else if (value == SDLK_0) {
+            return "SDLK_0";
+        } else if (value == SDLK_1) {
+            return "SDLK_1";
+        } else if (value == SDLK_2) {
+            return "SDLK_2";
+        } else if (value == SDLK_3) {
+            return "SDLK_3";
+        } else if (value == SDLK_4) {
+            return "SDLK_4";
+        } else if (value == SDLK_5) {
+            return "SDLK_5";
+        } else if (value == SDLK_6) {
+            return "SDLK_6";
+        } else if (value == SDLK_7) {
+            return "SDLK_7";
+        } else if (value == SDLK_8) {
+            return "SDLK_8";
+        } else if (value == SDLK_9) {
+            return "SDLK_9";
+        } else if (value == SDLK_COLON) {
+            return "SDLK_COLON";
+        } else if (value == SDLK_SEMICOLON) {
+            return "SDLK_SEMICOLON";
+        } else if (value == SDLK_LESS) {
+            return "SDLK_LESS";
+        } else if (value == SDLK_EQUALS) {
+            return "SDLK_EQUALS";
+        } else if (value == SDLK_GREATER) {
+            return "SDLK_GREATER";
+        } else if (value == SDLK_QUESTION) {
+            return "SDLK_QUESTION";
+        } else if (value == SDLK_AT) {
+            return "SDLK_AT";
+        } else if (value == SDLK_LEFTBRACKET) {
+            return "SDLK_LEFTBRACKET";
+        } else if (value == SDLK_BACKSLASH) {
+            return "SDLK_BACKSLASH";
+        } else if (value == SDLK_RIGHTBRACKET) {
+            return "SDLK_RIGHTBRACKET";
+        } else if (value == SDLK_CARET) {
+            return "SDLK_CARET";
+        } else if (value == SDLK_UNDERSCORE) {
+            return "SDLK_UNDERSCORE";
+        } else if (value == SDLK_BACKQUOTE) {
+            return "SDLK_BACKQUOTE";
+        } else if (value == SDLK_A) {
+            return "SDLK_A";
+        } else if (value == SDLK_B) {
+            return "SDLK_B";
+        } else if (value == SDLK_C) {
+            return "SDLK_C";
+        } else if (value == SDLK_D) {
+            return "SDLK_D";
+        } else if (value == SDLK_E) {
+            return "SDLK_E";
+        } else if (value == SDLK_F) {
+            return "SDLK_F";
+        } else if (value == SDLK_G) {
+            return "SDLK_G";
+        } else if (value == SDLK_H) {
+            return "SDLK_H";
+        } else if (value == SDLK_I) {
+            return "SDLK_I";
+        } else if (value == SDLK_J) {
+            return "SDLK_J";
+        } else if (value == SDLK_K) {
+            return "SDLK_K";
+        } else if (value == SDLK_L) {
+            return "SDLK_L";
+        } else if (value == SDLK_M) {
+            return "SDLK_M";
+        } else if (value == SDLK_N) {
+            return "SDLK_N";
+        } else if (value == SDLK_O) {
+            return "SDLK_O";
+        } else if (value == SDLK_P) {
+            return "SDLK_P";
+        } else if (value == SDLK_Q) {
+            return "SDLK_Q";
+        } else if (value == SDLK_R) {
+            return "SDLK_R";
+        } else if (value == SDLK_S) {
+            return "SDLK_S";
+        } else if (value == SDLK_T) {
+            return "SDLK_T";
+        } else if (value == SDLK_U) {
+            return "SDLK_U";
+        } else if (value == SDLK_V) {
+            return "SDLK_V";
+        } else if (value == SDLK_W) {
+            return "SDLK_W";
+        } else if (value == SDLK_X) {
+            return "SDLK_X";
+        } else if (value == SDLK_Y) {
+            return "SDLK_Y";
+        } else if (value == SDLK_Z) {
+            return "SDLK_Z";
+        } else if (value == SDLK_CAPSLOCK) {
+            return "SDLK_CAPSLOCK";
+        } else if (value == SDLK_F1) {
+            return "SDLK_F1";
+        } else if (value == SDLK_F2) {
+            return "SDLK_F2";
+        } else if (value == SDLK_F3) {
+            return "SDLK_F3";
+        } else if (value == SDLK_F4) {
+            return "SDLK_F4";
+        } else if (value == SDLK_F5) {
+            return "SDLK_F5";
+        } else if (value == SDLK_F6) {
+            return "SDLK_F6";
+        } else if (value == SDLK_F7) {
+            return "SDLK_F7";
+        } else if (value == SDLK_F8) {
+            return "SDLK_F8";
+        } else if (value == SDLK_F9) {
+            return "SDLK_F9";
+        } else if (value == SDLK_F10) {
+            return "SDLK_F10";
+        } else if (value == SDLK_F11) {
+            return "SDLK_F11";
+        } else if (value == SDLK_F12) {
+            return "SDLK_F12";
+        } else if (value == SDLK_PRINTSCREEN) {
+            return "SDLK_PRINTSCREEN";
+        } else if (value == SDLK_SCROLLLOCK) {
+            return "SDLK_SCROLLLOCK";
+        } else if (value == SDLK_PAUSE) {
+            return "SDLK_PAUSE";
+        } else if (value == SDLK_INSERT) {
+            return "SDLK_INSERT";
+        } else if (value == SDLK_HOME) {
+            return "SDLK_HOME";
+        } else if (value == SDLK_PAGEUP) {
+            return "SDLK_PAGEUP";
+        } else if (value == SDLK_DELETE) {
+            return "SDLK_DELETE";
+        } else if (value == SDLK_END) {
+            return "SDLK_END";
+        } else if (value == SDLK_PAGEDOWN) {
+            return "SDLK_PAGEDOWN";
+        } else if (value == SDLK_RIGHT) {
+            return "SDLK_RIGHT";
+        } else if (value == SDLK_LEFT) {
+            return "SDLK_LEFT";
+        } else if (value == SDLK_DOWN) {
+            return "SDLK_DOWN";
+        } else if (value == SDLK_UP) {
+            return "SDLK_UP";
+        } else if (value == SDLK_NUMLOCKCLEAR) {
+            return "SDLK_NUMLOCKCLEAR";
+        } else if (value == SDLK_KP_DIVIDE) {
+            return "SDLK_KP_DIVIDE";
+        } else if (value == SDLK_KP_MULTIPLY) {
+            return "SDLK_KP_MULTIPLY";
+        } else if (value == SDLK_KP_MINUS) {
+            return "SDLK_KP_MINUS";
+        } else if (value == SDLK_KP_PLUS) {
+            return "SDLK_KP_PLUS";
+        } else if (value == SDLK_KP_ENTER) {
+            return "SDLK_KP_ENTER";
+        } else if (value == SDLK_KP_1) {
+            return "SDLK_KP_1";
+        } else if (value == SDLK_KP_2) {
+            return "SDLK_KP_2";
+        } else if (value == SDLK_KP_3) {
+            return "SDLK_KP_3";
+        } else if (value == SDLK_KP_4) {
+            return "SDLK_KP_4";
+        } else if (value == SDLK_KP_5) {
+            return "SDLK_KP_5";
+        } else if (value == SDLK_KP_6) {
+            return "SDLK_KP_6";
+        } else if (value == SDLK_KP_7) {
+            return "SDLK_KP_7";
+        } else if (value == SDLK_KP_8) {
+            return "SDLK_KP_8";
+        } else if (value == SDLK_KP_9) {
+            return "SDLK_KP_9";
+        } else if (value == SDLK_KP_0) {
+            return "SDLK_KP_0";
+        } else if (value == SDLK_KP_PERIOD) {
+            return "SDLK_KP_PERIOD";
+        } else if (value == SDLK_APPLICATION) {
+            return "SDLK_APPLICATION";
+        } else if (value == SDLK_POWER) {
+            return "SDLK_POWER";
+        } else if (value == SDLK_KP_EQUALS) {
+            return "SDLK_KP_EQUALS";
+        } else if (value == SDLK_F13) {
+            return "SDLK_F13";
+        } else if (value == SDLK_F14) {
+            return "SDLK_F14";
+        } else if (value == SDLK_F15) {
+            return "SDLK_F15";
+        } else if (value == SDLK_F16) {
+            return "SDLK_F16";
+        } else if (value == SDLK_F17) {
+            return "SDLK_F17";
+        } else if (value == SDLK_F18) {
+            return "SDLK_F18";
+        } else if (value == SDLK_F19) {
+            return "SDLK_F19";
+        } else if (value == SDLK_F20) {
+            return "SDLK_F20";
+        } else if (value == SDLK_F21) {
+            return "SDLK_F21";
+        } else if (value == SDLK_F22) {
+            return "SDLK_F22";
+        } else if (value == SDLK_F23) {
+            return "SDLK_F23";
+        } else if (value == SDLK_F24) {
+            return "SDLK_F24";
+        } else if (value == SDLK_EXECUTE) {
+            return "SDLK_EXECUTE";
+        } else if (value == SDLK_HELP) {
+            return "SDLK_HELP";
+        } else if (value == SDLK_MENU) {
+            return "SDLK_MENU";
+        } else if (value == SDLK_SELECT) {
+            return "SDLK_SELECT";
+        } else if (value == SDLK_STOP) {
+            return "SDLK_STOP";
+        } else if (value == SDLK_AGAIN) {
+            return "SDLK_AGAIN";
+        } else if (value == SDLK_UNDO) {
+            return "SDLK_UNDO";
+        } else if (value == SDLK_CUT) {
+            return "SDLK_CUT";
+        } else if (value == SDLK_COPY) {
+            return "SDLK_COPY";
+        } else if (value == SDLK_PASTE) {
+            return "SDLK_PASTE";
+        } else if (value == SDLK_FIND) {
+            return "SDLK_FIND";
+        } else if (value == SDLK_MUTE) {
+            return "SDLK_MUTE";
+        } else if (value == SDLK_VOLUMEUP) {
+            return "SDLK_VOLUMEUP";
+        } else if (value == SDLK_VOLUMEDOWN) {
+            return "SDLK_VOLUMEDOWN";
+        } else if (value == SDLK_KP_COMMA) {
+            return "SDLK_KP_COMMA";
+        } else if (value == SDLK_KP_EQUALSAS400) {
+            return "SDLK_KP_EQUALSAS400";
+        } else if (value == SDLK_ALTERASE) {
+            return "SDLK_ALTERASE";
+        } else if (value == SDLK_SYSREQ) {
+            return "SDLK_SYSREQ";
+        } else if (value == SDLK_CANCEL) {
+            return "SDLK_CANCEL";
+        } else if (value == SDLK_CLEAR) {
+            return "SDLK_CLEAR";
+        } else if (value == SDLK_PRIOR) {
+            return "SDLK_PRIOR";
+        } else if (value == SDLK_RETURN2) {
+            return "SDLK_RETURN2";
+        } else if (value == SDLK_SEPARATOR) {
+            return "SDLK_SEPARATOR";
+        } else if (value == SDLK_OUT) {
+            return "SDLK_OUT";
+        } else if (value == SDLK_OPER) {
+            return "SDLK_OPER";
+        } else if (value == SDLK_CLEARAGAIN) {
+            return "SDLK_CLEARAGAIN";
+        } else if (value == SDLK_CRSEL) {
+            return "SDLK_CRSEL";
+        } else if (value == SDLK_EXSEL) {
+            return "SDLK_EXSEL";
+        } else if (value == SDLK_KP_00) {
+            return "SDLK_KP_00";
+        } else if (value == SDLK_KP_000) {
+            return "SDLK_KP_000";
+        } else if (value == SDLK_THOUSANDSSEPARATOR) {
+            return "SDLK_THOUSANDSSEPARATOR";
+        } else if (value == SDLK_DECIMALSEPARATOR) {
+            return "SDLK_DECIMALSEPARATOR";
+        } else if (value == SDLK_CURRENCYUNIT) {
+            return "SDLK_CURRENCYUNIT";
+        } else if (value == SDLK_CURRENCYSUBUNIT) {
+            return "SDLK_CURRENCYSUBUNIT";
+        } else if (value == SDLK_KP_LEFTPAREN) {
+            return "SDLK_KP_LEFTPAREN";
+        } else if (value == SDLK_KP_RIGHTPAREN) {
+            return "SDLK_KP_RIGHTPAREN";
+        } else if (value == SDLK_KP_LEFTBRACE) {
+            return "SDLK_KP_LEFTBRACE";
+        } else if (value == SDLK_KP_RIGHTBRACE) {
+            return "SDLK_KP_RIGHTBRACE";
+        } else if (value == SDLK_KP_TAB) {
+            return "SDLK_KP_TAB";
+        } else if (value == SDLK_KP_BACKSPACE) {
+            return "SDLK_KP_BACKSPACE";
+        } else if (value == SDLK_KP_A) {
+            return "SDLK_KP_A";
+        } else if (value == SDLK_KP_B) {
+            return "SDLK_KP_B";
+        } else if (value == SDLK_KP_C) {
+            return "SDLK_KP_C";
+        } else if (value == SDLK_KP_D) {
+            return "SDLK_KP_D";
+        } else if (value == SDLK_KP_E) {
+            return "SDLK_KP_E";
+        } else if (value == SDLK_KP_F) {
+            return "SDLK_KP_F";
+        } else if (value == SDLK_KP_XOR) {
+            return "SDLK_KP_XOR";
+        } else if (value == SDLK_KP_POWER) {
+            return "SDLK_KP_POWER";
+        } else if (value == SDLK_KP_PERCENT) {
+            return "SDLK_KP_PERCENT";
+        } else if (value == SDLK_KP_LESS) {
+            return "SDLK_KP_LESS";
+        } else if (value == SDLK_KP_GREATER) {
+            return "SDLK_KP_GREATER";
+        } else if (value == SDLK_KP_AMPERSAND) {
+            return "SDLK_KP_AMPERSAND";
+        } else if (value == SDLK_KP_DBLAMPERSAND) {
+            return "SDLK_KP_DBLAMPERSAND";
+        } else if (value == SDLK_KP_VERTICALBAR) {
+            return "SDLK_KP_VERTICALBAR";
+        } else if (value == SDLK_KP_DBLVERTICALBAR) {
+            return "SDLK_KP_DBLVERTICALBAR";
+        } else if (value == SDLK_KP_COLON) {
+            return "SDLK_KP_COLON";
+        } else if (value == SDLK_KP_HASH) {
+            return "SDLK_KP_HASH";
+        } else if (value == SDLK_KP_SPACE) {
+            return "SDLK_KP_SPACE";
+        } else if (value == SDLK_KP_AT) {
+            return "SDLK_KP_AT";
+        } else if (value == SDLK_KP_EXCLAM) {
+            return "SDLK_KP_EXCLAM";
+        } else if (value == SDLK_KP_MEMSTORE) {
+            return "SDLK_KP_MEMSTORE";
+        } else if (value == SDLK_KP_MEMRECALL) {
+            return "SDLK_KP_MEMRECALL";
+        } else if (value == SDLK_KP_MEMCLEAR) {
+            return "SDLK_KP_MEMCLEAR";
+        } else if (value == SDLK_KP_MEMADD) {
+            return "SDLK_KP_MEMADD";
+        } else if (value == SDLK_KP_MEMSUBTRACT) {
+            return "SDLK_KP_MEMSUBTRACT";
+        } else if (value == SDLK_KP_MEMMULTIPLY) {
+            return "SDLK_KP_MEMMULTIPLY";
+        } else if (value == SDLK_KP_MEMDIVIDE) {
+            return "SDLK_KP_MEMDIVIDE";
+        } else if (value == SDLK_KP_PLUSMINUS) {
+            return "SDLK_KP_PLUSMINUS";
+        } else if (value == SDLK_KP_CLEAR) {
+            return "SDLK_KP_CLEAR";
+        } else if (value == SDLK_KP_CLEARENTRY) {
+            return "SDLK_KP_CLEARENTRY";
+        } else if (value == SDLK_KP_BINARY) {
+            return "SDLK_KP_BINARY";
+        } else if (value == SDLK_KP_OCTAL) {
+            return "SDLK_KP_OCTAL";
+        } else if (value == SDLK_KP_DECIMAL) {
+            return "SDLK_KP_DECIMAL";
+        } else if (value == SDLK_KP_HEXADECIMAL) {
+            return "SDLK_KP_HEXADECIMAL";
+        } else if (value == SDLK_LCTRL) {
+            return "SDLK_LCTRL";
+        } else if (value == SDLK_LSHIFT) {
+            return "SDLK_LSHIFT";
+        } else if (value == SDLK_LALT) {
+            return "SDLK_LALT";
+        } else if (value == SDLK_LGUI) {
+            return "SDLK_LGUI";
+        } else if (value == SDLK_RCTRL) {
+            return "SDLK_RCTRL";
+        } else if (value == SDLK_RSHIFT) {
+            return "SDLK_RSHIFT";
+        } else if (value == SDLK_RALT) {
+            return "SDLK_RALT";
+        } else if (value == SDLK_RGUI) {
+            return "SDLK_RGUI";
+        } else if (value == SDLK_MODE) {
+            return "SDLK_MODE";
+        } else if (value == SDLK_AUDIONEXT) {
+            return "SDLK_AUDIONEXT";
+        } else if (value == SDLK_AUDIOPREV) {
+            return "SDLK_AUDIOPREV";
+        } else if (value == SDLK_AUDIOSTOP) {
+            return "SDLK_AUDIOSTOP";
+        } else if (value == SDLK_AUDIOPLAY) {
+            return "SDLK_AUDIOPLAY";
+        } else if (value == SDLK_AUDIOMUTE) {
+            return "SDLK_AUDIOMUTE";
+        } else if (value == SDLK_MEDIASELECT) {
+            return "SDLK_MEDIASELECT";
+        } else if (value == SDLK_WWW) {
+            return "SDLK_WWW";
+        } else if (value == SDLK_MAIL) {
+            return "SDLK_MAIL";
+        } else if (value == SDLK_CALCULATOR) {
+            return "SDLK_CALCULATOR";
+        } else if (value == SDLK_COMPUTER) {
+            return "SDLK_COMPUTER";
+        } else if (value == SDLK_AC_SEARCH) {
+            return "SDLK_AC_SEARCH";
+        } else if (value == SDLK_AC_HOME) {
+            return "SDLK_AC_HOME";
+        } else if (value == SDLK_AC_BACK) {
+            return "SDLK_AC_BACK";
+        } else if (value == SDLK_AC_FORWARD) {
+            return "SDLK_AC_FORWARD";
+        } else if (value == SDLK_AC_STOP) {
+            return "SDLK_AC_STOP";
+        } else if (value == SDLK_AC_REFRESH) {
+            return "SDLK_AC_REFRESH";
+        } else if (value == SDLK_AC_BOOKMARKS) {
+            return "SDLK_AC_BOOKMARKS";
+        } else if (value == SDLK_BRIGHTNESSDOWN) {
+            return "SDLK_BRIGHTNESSDOWN";
+        } else if (value == SDLK_BRIGHTNESSUP) {
+            return "SDLK_BRIGHTNESSUP";
+        } else if (value == SDLK_DISPLAYSWITCH) {
+            return "SDLK_DISPLAYSWITCH";
+        } else if (value == SDLK_KBDILLUMTOGGLE) {
+            return "SDLK_KBDILLUMTOGGLE";
+        } else if (value == SDLK_KBDILLUMDOWN) {
+            return "SDLK_KBDILLUMDOWN";
+        } else if (value == SDLK_KBDILLUMUP) {
+            return "SDLK_KBDILLUMUP";
+        } else if (value == SDLK_EJECT) {
+            return "SDLK_EJECT";
+        } else if (value == SDLK_SLEEP) {
+            return "SDLK_SLEEP";
+        } else if (value == SDLK_APP1) {
+            return "SDLK_APP1";
+        } else if (value == SDLK_APP2) {
+            return "SDLK_APP2";
+        } else if (value == SDLK_AUDIOREWIND) {
+            return "SDLK_AUDIOREWIND";
+        } else if (value == SDLK_AUDIOFASTFORWARD) {
+            return "SDLK_AUDIOFASTFORWARD";
+        } else if (value == SDLK_SOFTLEFT) {
+            return "SDLK_SOFTLEFT";
+        } else if (value == SDLK_SOFTRIGHT) {
+            return "SDLK_SOFTRIGHT";
+        } else if (value == SDLK_CALL) {
+            return "SDLK_CALL";
+        } else if (value == SDLK_ENDCALL) {
+            return "SDLK_ENDCALL";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_Keycode() {
     }

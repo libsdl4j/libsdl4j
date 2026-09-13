@@ -24,7 +24,31 @@ public final class SDL_HitTestResult implements JnaEnum {
     public static final int SDL_HITTEST_RESIZE_BOTTOMLEFT = 8;
     public static final int SDL_HITTEST_RESIZE_LEFT = 9;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_HITTEST_NORMAL) {
+            return "SDL_HITTEST_NORMAL";
+        } else if (value == SDL_HITTEST_DRAGGABLE) {
+            return "SDL_HITTEST_DRAGGABLE";
+        } else if (value == SDL_HITTEST_RESIZE_TOPLEFT) {
+            return "SDL_HITTEST_RESIZE_TOPLEFT";
+        } else if (value == SDL_HITTEST_RESIZE_TOP) {
+            return "SDL_HITTEST_RESIZE_TOP";
+        } else if (value == SDL_HITTEST_RESIZE_TOPRIGHT) {
+            return "SDL_HITTEST_RESIZE_TOPRIGHT";
+        } else if (value == SDL_HITTEST_RESIZE_RIGHT) {
+            return "SDL_HITTEST_RESIZE_RIGHT";
+        } else if (value == SDL_HITTEST_RESIZE_BOTTOMRIGHT) {
+            return "SDL_HITTEST_RESIZE_BOTTOMRIGHT";
+        } else if (value == SDL_HITTEST_RESIZE_BOTTOM) {
+            return "SDL_HITTEST_RESIZE_BOTTOM";
+        } else if (value == SDL_HITTEST_RESIZE_BOTTOMLEFT) {
+            return "SDL_HITTEST_RESIZE_BOTTOMLEFT";
+        } else if (value == SDL_HITTEST_RESIZE_LEFT) {
+            return "SDL_HITTEST_RESIZE_LEFT";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_HitTestResult() {
     }

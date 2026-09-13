@@ -53,7 +53,23 @@ public final class SDL_BlendMode implements JnaEnum {
 
     public static final int SDL_BLENDMODE_INVALID = 0x7FFFFFFF;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_BLENDMODE_NONE) {
+            return "SDL_BLENDMODE_NONE";
+        } else if (value == SDL_BLENDMODE_BLEND) {
+            return "SDL_BLENDMODE_BLEND";
+        } else if (value == SDL_BLENDMODE_ADD) {
+            return "SDL_BLENDMODE_ADD";
+        } else if (value == SDL_BLENDMODE_MOD) {
+            return "SDL_BLENDMODE_MOD";
+        } else if (value == SDL_BLENDMODE_MUL) {
+            return "SDL_BLENDMODE_MUL";
+        } else if (value == SDL_BLENDMODE_INVALID) {
+            return "SDL_BLENDMODE_INVALID";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_BlendMode() {
     }

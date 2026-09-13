@@ -34,6 +34,7 @@ import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_ARRAYU16
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_ARRAYU32;
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_ARRAYU8;
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_INDEX1;
+import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_INDEX2;
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_INDEX4;
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_INDEX8;
 import static io.github.libsdl4j.api.pixels.SDL_PixelType.SDL_PIXELTYPE_PACKED16;
@@ -45,6 +46,8 @@ public final class SDL_PixelFormatEnum implements JnaEnum {
     public static final int SDL_PIXELFORMAT_UNKNOWN = 0;
     public static final int SDL_PIXELFORMAT_INDEX1LSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX1, SDL_BITMAPORDER_4321, 0, 1, 0);
     public static final int SDL_PIXELFORMAT_INDEX1MSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX1, SDL_BITMAPORDER_1234, 0, 1, 0);
+    public static final int SDL_PIXELFORMAT_INDEX2LSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX2, SDL_BITMAPORDER_4321, 0, 2, 0);
+    public static final int SDL_PIXELFORMAT_INDEX2MSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX2, SDL_BITMAPORDER_1234, 0, 2, 0);
     public static final int SDL_PIXELFORMAT_INDEX4LSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX4, SDL_BITMAPORDER_4321, 0, 4, 0);
     public static final int SDL_PIXELFORMAT_INDEX4MSB = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX4, SDL_BITMAPORDER_1234, 0, 4, 0);
     public static final int SDL_PIXELFORMAT_INDEX8 = SDL_DEFINE_PIXELFORMAT(SDL_PIXELTYPE_INDEX8, 0, 0, 8, 1);
@@ -86,6 +89,10 @@ public final class SDL_PixelFormatEnum implements JnaEnum {
     public static final int SDL_PIXELFORMAT_ARGB32;
     public static final int SDL_PIXELFORMAT_BGRA32;
     public static final int SDL_PIXELFORMAT_ABGR32;
+    public static final int SDL_PIXELFORMAT_RGBX32;
+    public static final int SDL_PIXELFORMAT_XRGB32;
+    public static final int SDL_PIXELFORMAT_BGRX32;
+    public static final int SDL_PIXELFORMAT_XBGR32;
 
     static {
         if (SDL_BYTEORDER == SDL_BIG_ENDIAN) {
@@ -93,11 +100,19 @@ public final class SDL_PixelFormatEnum implements JnaEnum {
             SDL_PIXELFORMAT_ARGB32 = SDL_PIXELFORMAT_ARGB8888;
             SDL_PIXELFORMAT_BGRA32 = SDL_PIXELFORMAT_BGRA8888;
             SDL_PIXELFORMAT_ABGR32 = SDL_PIXELFORMAT_ABGR8888;
+            SDL_PIXELFORMAT_RGBX32 = SDL_PIXELFORMAT_RGBX8888;
+            SDL_PIXELFORMAT_XRGB32 = SDL_PIXELFORMAT_XRGB8888;
+            SDL_PIXELFORMAT_BGRX32 = SDL_PIXELFORMAT_BGRX8888;
+            SDL_PIXELFORMAT_XBGR32 = SDL_PIXELFORMAT_XBGR8888;
         } else {
             SDL_PIXELFORMAT_RGBA32 = SDL_PIXELFORMAT_ABGR8888;
             SDL_PIXELFORMAT_ARGB32 = SDL_PIXELFORMAT_BGRA8888;
             SDL_PIXELFORMAT_BGRA32 = SDL_PIXELFORMAT_ARGB8888;
             SDL_PIXELFORMAT_ABGR32 = SDL_PIXELFORMAT_RGBA8888;
+            SDL_PIXELFORMAT_RGBX32 = SDL_PIXELFORMAT_XBGR8888;
+            SDL_PIXELFORMAT_XRGB32 = SDL_PIXELFORMAT_BGRX8888;
+            SDL_PIXELFORMAT_BGRX32 = SDL_PIXELFORMAT_XRGB8888;
+            SDL_PIXELFORMAT_XBGR32 = SDL_PIXELFORMAT_RGBX8888;
         }
     }
 
@@ -179,6 +194,7 @@ public final class SDL_PixelFormatEnum implements JnaEnum {
             int format) {
         return (!SDL_ISPIXELFORMAT_FOURCC(format)
                 && ((SDL_PIXELTYPE(format) == SDL_PIXELTYPE_INDEX1)
+                || (SDL_PIXELTYPE(format) == SDL_PIXELTYPE_INDEX2)
                 || (SDL_PIXELTYPE(format) == SDL_PIXELTYPE_INDEX4)
                 || (SDL_PIXELTYPE(format) == SDL_PIXELTYPE_INDEX8)));
     }
@@ -227,6 +243,10 @@ public final class SDL_PixelFormatEnum implements JnaEnum {
             return "SDL_PIXELFORMAT_INDEX1LSB";
         } else if (value == SDL_PIXELFORMAT_INDEX1MSB) {
             return "SDL_PIXELFORMAT_INDEX1MSB";
+        } else if (value == SDL_PIXELFORMAT_INDEX2LSB) {
+            return "SDL_PIXELFORMAT_INDEX2LSB";
+        } else if (value == SDL_PIXELFORMAT_INDEX2MSB) {
+            return "SDL_PIXELFORMAT_INDEX2MSB";
         } else if (value == SDL_PIXELFORMAT_INDEX4LSB) {
             return "SDL_PIXELFORMAT_INDEX4LSB";
         } else if (value == SDL_PIXELFORMAT_INDEX4MSB) {

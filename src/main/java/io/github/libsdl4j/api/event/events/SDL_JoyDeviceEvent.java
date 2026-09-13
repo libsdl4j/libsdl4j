@@ -27,8 +27,7 @@ public final class SDL_JoyDeviceEvent extends Structure {
     /** In milliseconds, populated using SDL_GetTicks() */
     public int timestamp;
 
-    // TODO: Shouldn't it be SDL_JoystickID?
-    /** The joystick device index for the ADDED event, instance id for the REMOVED event */
+    /** The joystick device index for the SDL_JOYDEVICEADDED event, SDL_JoystickID for the SDL_JOYDEVICEREMOVED event */
     public int which;
 
     public SDL_JoyDeviceEvent() {

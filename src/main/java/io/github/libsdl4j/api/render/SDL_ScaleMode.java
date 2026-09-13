@@ -18,7 +18,17 @@ public final class SDL_ScaleMode implements JnaEnum {
     /** anisotropic filtering */
     public static final int SDL_ScaleModeBest = 2;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_ScaleModeNearest) {
+            return "SDL_ScaleModeNearest";
+        } else if (value == SDL_ScaleModeLinear) {
+            return "SDL_ScaleModeLinear";
+        } else if (value == SDL_ScaleModeBest) {
+            return "SDL_ScaleModeBest";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_ScaleMode() {
     }

@@ -13,11 +13,19 @@ import static io.github.libsdl4j.api.event.SDL_EventType.SDL_APP_WILLENTERFOREGR
 
 /**
  * OS Specific event
+ *
+ * <p>SDL removed this structure from the SDL_Event union in SDL 2.30.0. The
+ * SDL_APP_* events it describes are still delivered and still have this exact
+ * layout, which is identical to SDL_CommonEvent, so reading them through
+ * SDL_Event.common is equivalent and forward compatible.</p>
+ *
+ * @see io.github.libsdl4j.api.event.events.SDL_CommonEvent
  */
 @Structure.FieldOrder({
         "type",
         "timestamp"
 })
+@Deprecated
 public final class SDL_OSEvent extends Structure {
 
     /**

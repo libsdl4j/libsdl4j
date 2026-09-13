@@ -10,7 +10,21 @@ public final class SDL_MessageBoxColorType implements JnaEnum {
     public static final int SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND = 3;
     public static final int SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED = 4;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_MESSAGEBOX_COLOR_BACKGROUND) {
+            return "SDL_MESSAGEBOX_COLOR_BACKGROUND";
+        } else if (value == SDL_MESSAGEBOX_COLOR_TEXT) {
+            return "SDL_MESSAGEBOX_COLOR_TEXT";
+        } else if (value == SDL_MESSAGEBOX_COLOR_BUTTON_BORDER) {
+            return "SDL_MESSAGEBOX_COLOR_BUTTON_BORDER";
+        } else if (value == SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND) {
+            return "SDL_MESSAGEBOX_COLOR_BUTTON_BACKGROUND";
+        } else if (value == SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED) {
+            return "SDL_MESSAGEBOX_COLOR_BUTTON_SELECTED";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_MessageBoxColorType() {
     }

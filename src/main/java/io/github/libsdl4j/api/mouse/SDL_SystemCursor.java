@@ -45,7 +45,37 @@ public final class SDL_SystemCursor implements JnaEnum {
 
     public static final int SDL_NUM_SYSTEM_CURSORS = 12;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_SYSTEM_CURSOR_ARROW) {
+            return "SDL_SYSTEM_CURSOR_ARROW";
+        } else if (value == SDL_SYSTEM_CURSOR_IBEAM) {
+            return "SDL_SYSTEM_CURSOR_IBEAM";
+        } else if (value == SDL_SYSTEM_CURSOR_WAIT) {
+            return "SDL_SYSTEM_CURSOR_WAIT";
+        } else if (value == SDL_SYSTEM_CURSOR_CROSSHAIR) {
+            return "SDL_SYSTEM_CURSOR_CROSSHAIR";
+        } else if (value == SDL_SYSTEM_CURSOR_WAITARROW) {
+            return "SDL_SYSTEM_CURSOR_WAITARROW";
+        } else if (value == SDL_SYSTEM_CURSOR_SIZENWSE) {
+            return "SDL_SYSTEM_CURSOR_SIZENWSE";
+        } else if (value == SDL_SYSTEM_CURSOR_SIZENESW) {
+            return "SDL_SYSTEM_CURSOR_SIZENESW";
+        } else if (value == SDL_SYSTEM_CURSOR_SIZEWE) {
+            return "SDL_SYSTEM_CURSOR_SIZEWE";
+        } else if (value == SDL_SYSTEM_CURSOR_SIZENS) {
+            return "SDL_SYSTEM_CURSOR_SIZENS";
+        } else if (value == SDL_SYSTEM_CURSOR_SIZEALL) {
+            return "SDL_SYSTEM_CURSOR_SIZEALL";
+        } else if (value == SDL_SYSTEM_CURSOR_NO) {
+            return "SDL_SYSTEM_CURSOR_NO";
+        } else if (value == SDL_SYSTEM_CURSOR_HAND) {
+            return "SDL_SYSTEM_CURSOR_HAND";
+        } else if (value == SDL_NUM_SYSTEM_CURSORS) {
+            return "SDL_NUM_SYSTEM_CURSORS";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_SystemCursor() {
     }

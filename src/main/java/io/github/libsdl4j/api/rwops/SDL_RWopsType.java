@@ -22,7 +22,23 @@ public final class SDL_RWopsType implements JnaEnum {
     /** Read-Only memory stream */
     public static final int SDL_RWOPS_MEMORY_RO = 5;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_RWOPS_UNKNOWN) {
+            return "SDL_RWOPS_UNKNOWN";
+        } else if (value == SDL_RWOPS_WINFILE) {
+            return "SDL_RWOPS_WINFILE";
+        } else if (value == SDL_RWOPS_STDFILE) {
+            return "SDL_RWOPS_STDFILE";
+        } else if (value == SDL_RWOPS_JNIFILE) {
+            return "SDL_RWOPS_JNIFILE";
+        } else if (value == SDL_RWOPS_MEMORY) {
+            return "SDL_RWOPS_MEMORY";
+        } else if (value == SDL_RWOPS_MEMORY_RO) {
+            return "SDL_RWOPS_MEMORY_RO";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_RWopsType() {
     }

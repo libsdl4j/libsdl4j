@@ -154,6 +154,11 @@ public final class SDL_EventType implements JnaEnum {
     /** Game controller sensor was updated */
     public static final int SDL_CONTROLLERSENSORUPDATE = 0x659;
 
+    public static final int SDL_CONTROLLERUPDATECOMPLETE_RESERVED_FOR_SDL3 = 0x65A;
+
+    /** Game controller Steam handle has changed */
+    public static final int SDL_CONTROLLERSTEAMHANDLEUPDATED = 0x65B;
+
     public static final int SDL_FINGERDOWN = 0x700;
     public static final int SDL_FINGERUP = 0x701;
     public static final int SDL_FINGERMOTION = 0x702;
@@ -206,7 +211,133 @@ public final class SDL_EventType implements JnaEnum {
      */
     public static final int SDL_LASTEVENT = 0xFFFF;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_FIRSTEVENT) {
+            return "SDL_FIRSTEVENT";
+        } else if (value == SDL_QUIT) {
+            return "SDL_QUIT";
+        } else if (value == SDL_APP_TERMINATING) {
+            return "SDL_APP_TERMINATING";
+        } else if (value == SDL_APP_LOWMEMORY) {
+            return "SDL_APP_LOWMEMORY";
+        } else if (value == SDL_APP_WILLENTERBACKGROUND) {
+            return "SDL_APP_WILLENTERBACKGROUND";
+        } else if (value == SDL_APP_DIDENTERBACKGROUND) {
+            return "SDL_APP_DIDENTERBACKGROUND";
+        } else if (value == SDL_APP_WILLENTERFOREGROUND) {
+            return "SDL_APP_WILLENTERFOREGROUND";
+        } else if (value == SDL_APP_DIDENTERFOREGROUND) {
+            return "SDL_APP_DIDENTERFOREGROUND";
+        } else if (value == SDL_LOCALECHANGED) {
+            return "SDL_LOCALECHANGED";
+        } else if (value == SDL_DISPLAYEVENT) {
+            return "SDL_DISPLAYEVENT";
+        } else if (value == SDL_WINDOWEVENT) {
+            return "SDL_WINDOWEVENT";
+        } else if (value == SDL_SYSWMEVENT) {
+            return "SDL_SYSWMEVENT";
+        } else if (value == SDL_KEYDOWN) {
+            return "SDL_KEYDOWN";
+        } else if (value == SDL_KEYUP) {
+            return "SDL_KEYUP";
+        } else if (value == SDL_TEXTEDITING) {
+            return "SDL_TEXTEDITING";
+        } else if (value == SDL_TEXTINPUT) {
+            return "SDL_TEXTINPUT";
+        } else if (value == SDL_KEYMAPCHANGED) {
+            return "SDL_KEYMAPCHANGED";
+        } else if (value == SDL_TEXTEDITING_EXT) {
+            return "SDL_TEXTEDITING_EXT";
+        } else if (value == SDL_MOUSEMOTION) {
+            return "SDL_MOUSEMOTION";
+        } else if (value == SDL_MOUSEBUTTONDOWN) {
+            return "SDL_MOUSEBUTTONDOWN";
+        } else if (value == SDL_MOUSEBUTTONUP) {
+            return "SDL_MOUSEBUTTONUP";
+        } else if (value == SDL_MOUSEWHEEL) {
+            return "SDL_MOUSEWHEEL";
+        } else if (value == SDL_JOYAXISMOTION) {
+            return "SDL_JOYAXISMOTION";
+        } else if (value == SDL_JOYBALLMOTION) {
+            return "SDL_JOYBALLMOTION";
+        } else if (value == SDL_JOYHATMOTION) {
+            return "SDL_JOYHATMOTION";
+        } else if (value == SDL_JOYBUTTONDOWN) {
+            return "SDL_JOYBUTTONDOWN";
+        } else if (value == SDL_JOYBUTTONUP) {
+            return "SDL_JOYBUTTONUP";
+        } else if (value == SDL_JOYDEVICEADDED) {
+            return "SDL_JOYDEVICEADDED";
+        } else if (value == SDL_JOYDEVICEREMOVED) {
+            return "SDL_JOYDEVICEREMOVED";
+        } else if (value == SDL_JOYBATTERYUPDATED) {
+            return "SDL_JOYBATTERYUPDATED";
+        } else if (value == SDL_CONTROLLERAXISMOTION) {
+            return "SDL_CONTROLLERAXISMOTION";
+        } else if (value == SDL_CONTROLLERBUTTONDOWN) {
+            return "SDL_CONTROLLERBUTTONDOWN";
+        } else if (value == SDL_CONTROLLERBUTTONUP) {
+            return "SDL_CONTROLLERBUTTONUP";
+        } else if (value == SDL_CONTROLLERDEVICEADDED) {
+            return "SDL_CONTROLLERDEVICEADDED";
+        } else if (value == SDL_CONTROLLERDEVICEREMOVED) {
+            return "SDL_CONTROLLERDEVICEREMOVED";
+        } else if (value == SDL_CONTROLLERDEVICEREMAPPED) {
+            return "SDL_CONTROLLERDEVICEREMAPPED";
+        } else if (value == SDL_CONTROLLERTOUCHPADDOWN) {
+            return "SDL_CONTROLLERTOUCHPADDOWN";
+        } else if (value == SDL_CONTROLLERTOUCHPADMOTION) {
+            return "SDL_CONTROLLERTOUCHPADMOTION";
+        } else if (value == SDL_CONTROLLERTOUCHPADUP) {
+            return "SDL_CONTROLLERTOUCHPADUP";
+        } else if (value == SDL_CONTROLLERSENSORUPDATE) {
+            return "SDL_CONTROLLERSENSORUPDATE";
+        } else if (value == SDL_CONTROLLERUPDATECOMPLETE_RESERVED_FOR_SDL3) {
+            return "SDL_CONTROLLERUPDATECOMPLETE_RESERVED_FOR_SDL3";
+        } else if (value == SDL_CONTROLLERSTEAMHANDLEUPDATED) {
+            return "SDL_CONTROLLERSTEAMHANDLEUPDATED";
+        } else if (value == SDL_FINGERDOWN) {
+            return "SDL_FINGERDOWN";
+        } else if (value == SDL_FINGERUP) {
+            return "SDL_FINGERUP";
+        } else if (value == SDL_FINGERMOTION) {
+            return "SDL_FINGERMOTION";
+        } else if (value == SDL_DOLLARGESTURE) {
+            return "SDL_DOLLARGESTURE";
+        } else if (value == SDL_DOLLARRECORD) {
+            return "SDL_DOLLARRECORD";
+        } else if (value == SDL_MULTIGESTURE) {
+            return "SDL_MULTIGESTURE";
+        } else if (value == SDL_CLIPBOARDUPDATE) {
+            return "SDL_CLIPBOARDUPDATE";
+        } else if (value == SDL_DROPFILE) {
+            return "SDL_DROPFILE";
+        } else if (value == SDL_DROPTEXT) {
+            return "SDL_DROPTEXT";
+        } else if (value == SDL_DROPBEGIN) {
+            return "SDL_DROPBEGIN";
+        } else if (value == SDL_DROPCOMPLETE) {
+            return "SDL_DROPCOMPLETE";
+        } else if (value == SDL_AUDIODEVICEADDED) {
+            return "SDL_AUDIODEVICEADDED";
+        } else if (value == SDL_AUDIODEVICEREMOVED) {
+            return "SDL_AUDIODEVICEREMOVED";
+        } else if (value == SDL_SENSORUPDATE) {
+            return "SDL_SENSORUPDATE";
+        } else if (value == SDL_RENDER_TARGETS_RESET) {
+            return "SDL_RENDER_TARGETS_RESET";
+        } else if (value == SDL_RENDER_DEVICE_RESET) {
+            return "SDL_RENDER_DEVICE_RESET";
+        } else if (value == SDL_POLLSENTINEL) {
+            return "SDL_POLLSENTINEL";
+        } else if (value == SDL_USEREVENT) {
+            return "SDL_USEREVENT";
+        } else if (value == SDL_LASTEVENT) {
+            return "SDL_LASTEVENT";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_EventType() {
     }

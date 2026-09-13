@@ -22,7 +22,21 @@ public final class SDL_DisplayEventID implements JnaEnum {
     /** Display has changed position */
     public static final int SDL_DISPLAYEVENT_MOVED = 4;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_DISPLAYEVENT_NONE) {
+            return "SDL_DISPLAYEVENT_NONE";
+        } else if (value == SDL_DISPLAYEVENT_ORIENTATION) {
+            return "SDL_DISPLAYEVENT_ORIENTATION";
+        } else if (value == SDL_DISPLAYEVENT_CONNECTED) {
+            return "SDL_DISPLAYEVENT_CONNECTED";
+        } else if (value == SDL_DISPLAYEVENT_DISCONNECTED) {
+            return "SDL_DISPLAYEVENT_DISCONNECTED";
+        } else if (value == SDL_DISPLAYEVENT_MOVED) {
+            return "SDL_DISPLAYEVENT_MOVED";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_DisplayEventID() {
     }

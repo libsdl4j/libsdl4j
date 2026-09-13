@@ -36,7 +36,27 @@ public final class SDL_SensorType implements JnaEnum {
     /** Gyroscope for right Joy-Con controller */
     public static final int SDL_SENSOR_GYRO_R = 6;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_SENSOR_INVALID) {
+            return "SDL_SENSOR_INVALID";
+        } else if (value == SDL_SENSOR_UNKNOWN) {
+            return "SDL_SENSOR_UNKNOWN";
+        } else if (value == SDL_SENSOR_ACCEL) {
+            return "SDL_SENSOR_ACCEL";
+        } else if (value == SDL_SENSOR_GYRO) {
+            return "SDL_SENSOR_GYRO";
+        } else if (value == SDL_SENSOR_ACCEL_L) {
+            return "SDL_SENSOR_ACCEL_L";
+        } else if (value == SDL_SENSOR_GYRO_L) {
+            return "SDL_SENSOR_GYRO_L";
+        } else if (value == SDL_SENSOR_ACCEL_R) {
+            return "SDL_SENSOR_ACCEL_R";
+        } else if (value == SDL_SENSOR_GYRO_R) {
+            return "SDL_SENSOR_GYRO_R";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_SensorType() {
     }
