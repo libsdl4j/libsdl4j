@@ -22,7 +22,27 @@ public final class SDL_GameControllerAxis implements JnaEnum {
     public static final int SDL_CONTROLLER_AXIS_TRIGGERRIGHT = 5;
     public static final int SDL_CONTROLLER_AXIS_MAX = 6;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_CONTROLLER_AXIS_INVALID) {
+            return "SDL_CONTROLLER_AXIS_INVALID";
+        } else if (value == SDL_CONTROLLER_AXIS_LEFTX) {
+            return "SDL_CONTROLLER_AXIS_LEFTX";
+        } else if (value == SDL_CONTROLLER_AXIS_LEFTY) {
+            return "SDL_CONTROLLER_AXIS_LEFTY";
+        } else if (value == SDL_CONTROLLER_AXIS_RIGHTX) {
+            return "SDL_CONTROLLER_AXIS_RIGHTX";
+        } else if (value == SDL_CONTROLLER_AXIS_RIGHTY) {
+            return "SDL_CONTROLLER_AXIS_RIGHTY";
+        } else if (value == SDL_CONTROLLER_AXIS_TRIGGERLEFT) {
+            return "SDL_CONTROLLER_AXIS_TRIGGERLEFT";
+        } else if (value == SDL_CONTROLLER_AXIS_TRIGGERRIGHT) {
+            return "SDL_CONTROLLER_AXIS_TRIGGERRIGHT";
+        } else if (value == SDL_CONTROLLER_AXIS_MAX) {
+            return "SDL_CONTROLLER_AXIS_MAX";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_GameControllerAxis() {
     }

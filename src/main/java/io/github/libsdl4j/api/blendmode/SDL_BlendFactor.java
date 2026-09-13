@@ -37,7 +37,31 @@ public final class SDL_BlendFactor implements JnaEnum {
     /** 1-dstA, 1-dstA, 1-dstA, 1-dstA */
     public static final int SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA = 0xA;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_BLENDFACTOR_ZERO) {
+            return "SDL_BLENDFACTOR_ZERO";
+        } else if (value == SDL_BLENDFACTOR_ONE) {
+            return "SDL_BLENDFACTOR_ONE";
+        } else if (value == SDL_BLENDFACTOR_SRC_COLOR) {
+            return "SDL_BLENDFACTOR_SRC_COLOR";
+        } else if (value == SDL_BLENDFACTOR_ONE_MINUS_SRC_COLOR) {
+            return "SDL_BLENDFACTOR_ONE_MINUS_SRC_COLOR";
+        } else if (value == SDL_BLENDFACTOR_SRC_ALPHA) {
+            return "SDL_BLENDFACTOR_SRC_ALPHA";
+        } else if (value == SDL_BLENDFACTOR_ONE_MINUS_SRC_ALPHA) {
+            return "SDL_BLENDFACTOR_ONE_MINUS_SRC_ALPHA";
+        } else if (value == SDL_BLENDFACTOR_DST_COLOR) {
+            return "SDL_BLENDFACTOR_DST_COLOR";
+        } else if (value == SDL_BLENDFACTOR_ONE_MINUS_DST_COLOR) {
+            return "SDL_BLENDFACTOR_ONE_MINUS_DST_COLOR";
+        } else if (value == SDL_BLENDFACTOR_DST_ALPHA) {
+            return "SDL_BLENDFACTOR_DST_ALPHA";
+        } else if (value == SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA) {
+            return "SDL_BLENDFACTOR_ONE_MINUS_DST_ALPHA";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_BlendFactor() {
     }

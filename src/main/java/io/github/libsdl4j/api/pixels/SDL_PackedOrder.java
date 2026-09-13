@@ -15,7 +15,29 @@ public final class SDL_PackedOrder implements JnaEnum {
     public static final int SDL_PACKEDORDER_ABGR = 7;
     public static final int SDL_PACKEDORDER_BGRA = 8;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_PACKEDORDER_NONE) {
+            return "SDL_PACKEDORDER_NONE";
+        } else if (value == SDL_PACKEDORDER_XRGB) {
+            return "SDL_PACKEDORDER_XRGB";
+        } else if (value == SDL_PACKEDORDER_RGBX) {
+            return "SDL_PACKEDORDER_RGBX";
+        } else if (value == SDL_PACKEDORDER_ARGB) {
+            return "SDL_PACKEDORDER_ARGB";
+        } else if (value == SDL_PACKEDORDER_RGBA) {
+            return "SDL_PACKEDORDER_RGBA";
+        } else if (value == SDL_PACKEDORDER_XBGR) {
+            return "SDL_PACKEDORDER_XBGR";
+        } else if (value == SDL_PACKEDORDER_BGRX) {
+            return "SDL_PACKEDORDER_BGRX";
+        } else if (value == SDL_PACKEDORDER_ABGR) {
+            return "SDL_PACKEDORDER_ABGR";
+        } else if (value == SDL_PACKEDORDER_BGRA) {
+            return "SDL_PACKEDORDER_BGRA";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_PackedOrder() {
     }

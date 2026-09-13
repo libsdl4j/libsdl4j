@@ -22,7 +22,21 @@ public final class SDL_BlendOperation implements JnaEnum {
     /** max(dst, src) : supported by D3D9, D3D11 */
     public static final int SDL_BLENDOPERATION_MAXIMUM = 0x5;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_BLENDOPERATION_ADD) {
+            return "SDL_BLENDOPERATION_ADD";
+        } else if (value == SDL_BLENDOPERATION_SUBTRACT) {
+            return "SDL_BLENDOPERATION_SUBTRACT";
+        } else if (value == SDL_BLENDOPERATION_REV_SUBTRACT) {
+            return "SDL_BLENDOPERATION_REV_SUBTRACT";
+        } else if (value == SDL_BLENDOPERATION_MINIMUM) {
+            return "SDL_BLENDOPERATION_MINIMUM";
+        } else if (value == SDL_BLENDOPERATION_MAXIMUM) {
+            return "SDL_BLENDOPERATION_MAXIMUM";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_BlendOperation() {
     }

@@ -465,6 +465,19 @@ public final class SdlGamecontroller {
             SDL_GameController gamecontroller);
 
     /**
+     * Get the Steam Input handle of an opened controller, if available.
+     *
+     * <p>Returns an InputHandle_t for the controller that can be used with Steam
+     * Input API: <a href="https://partner.steamgames.com/doc/api/ISteamInput">https://partner.steamgames.com/doc/api/ISteamInput</a></p>
+     *
+     * @param gamecontroller the game controller object to query.
+     * @return the gamepad handle, or 0 if unavailable.
+     * @since This function is available since SDL 2.30.0.
+     */
+    public static native long SDL_GameControllerGetSteamHandle(
+            SDL_GameController gamecontroller);
+
+    /**
      * Check if a controller has been opened and is currently connected.
      *
      * @param gamecontroller a game controller identifier previously returned by

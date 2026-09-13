@@ -16,7 +16,17 @@ public final class SDL_TextureAccess implements JnaEnum {
     /** Texture can be used as a render target */
     public static final int SDL_TEXTUREACCESS_TARGET = 2;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_TEXTUREACCESS_STATIC) {
+            return "SDL_TEXTUREACCESS_STATIC";
+        } else if (value == SDL_TEXTUREACCESS_STREAMING) {
+            return "SDL_TEXTUREACCESS_STREAMING";
+        } else if (value == SDL_TEXTUREACCESS_TARGET) {
+            return "SDL_TEXTUREACCESS_TARGET";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_TextureAccess() {
     }

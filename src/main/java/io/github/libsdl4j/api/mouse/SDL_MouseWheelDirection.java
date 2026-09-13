@@ -13,7 +13,15 @@ public final class SDL_MouseWheelDirection implements JnaEnum {
     /** The scroll direction is flipped / natural */
     public static final int SDL_MOUSEWHEEL_FLIPPED = 1;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_MOUSEWHEEL_NORMAL) {
+            return "SDL_MOUSEWHEEL_NORMAL";
+        } else if (value == SDL_MOUSEWHEEL_FLIPPED) {
+            return "SDL_MOUSEWHEEL_FLIPPED";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_MouseWheelDirection() {
     }

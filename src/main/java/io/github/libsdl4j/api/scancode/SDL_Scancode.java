@@ -461,7 +461,505 @@ public final class SDL_Scancode implements JnaEnum {
     /** Used for rejecting phone calls. */
     public static final int SDL_SCANCODE_ENDCALL = 290;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_SCANCODE_UNKNOWN) {
+            return "SDL_SCANCODE_UNKNOWN";
+        } else if (value == SDL_SCANCODE_A) {
+            return "SDL_SCANCODE_A";
+        } else if (value == SDL_SCANCODE_B) {
+            return "SDL_SCANCODE_B";
+        } else if (value == SDL_SCANCODE_C) {
+            return "SDL_SCANCODE_C";
+        } else if (value == SDL_SCANCODE_D) {
+            return "SDL_SCANCODE_D";
+        } else if (value == SDL_SCANCODE_E) {
+            return "SDL_SCANCODE_E";
+        } else if (value == SDL_SCANCODE_F) {
+            return "SDL_SCANCODE_F";
+        } else if (value == SDL_SCANCODE_G) {
+            return "SDL_SCANCODE_G";
+        } else if (value == SDL_SCANCODE_H) {
+            return "SDL_SCANCODE_H";
+        } else if (value == SDL_SCANCODE_I) {
+            return "SDL_SCANCODE_I";
+        } else if (value == SDL_SCANCODE_J) {
+            return "SDL_SCANCODE_J";
+        } else if (value == SDL_SCANCODE_K) {
+            return "SDL_SCANCODE_K";
+        } else if (value == SDL_SCANCODE_L) {
+            return "SDL_SCANCODE_L";
+        } else if (value == SDL_SCANCODE_M) {
+            return "SDL_SCANCODE_M";
+        } else if (value == SDL_SCANCODE_N) {
+            return "SDL_SCANCODE_N";
+        } else if (value == SDL_SCANCODE_O) {
+            return "SDL_SCANCODE_O";
+        } else if (value == SDL_SCANCODE_P) {
+            return "SDL_SCANCODE_P";
+        } else if (value == SDL_SCANCODE_Q) {
+            return "SDL_SCANCODE_Q";
+        } else if (value == SDL_SCANCODE_R) {
+            return "SDL_SCANCODE_R";
+        } else if (value == SDL_SCANCODE_S) {
+            return "SDL_SCANCODE_S";
+        } else if (value == SDL_SCANCODE_T) {
+            return "SDL_SCANCODE_T";
+        } else if (value == SDL_SCANCODE_U) {
+            return "SDL_SCANCODE_U";
+        } else if (value == SDL_SCANCODE_V) {
+            return "SDL_SCANCODE_V";
+        } else if (value == SDL_SCANCODE_W) {
+            return "SDL_SCANCODE_W";
+        } else if (value == SDL_SCANCODE_X) {
+            return "SDL_SCANCODE_X";
+        } else if (value == SDL_SCANCODE_Y) {
+            return "SDL_SCANCODE_Y";
+        } else if (value == SDL_SCANCODE_Z) {
+            return "SDL_SCANCODE_Z";
+        } else if (value == SDL_SCANCODE_1) {
+            return "SDL_SCANCODE_1";
+        } else if (value == SDL_SCANCODE_2) {
+            return "SDL_SCANCODE_2";
+        } else if (value == SDL_SCANCODE_3) {
+            return "SDL_SCANCODE_3";
+        } else if (value == SDL_SCANCODE_4) {
+            return "SDL_SCANCODE_4";
+        } else if (value == SDL_SCANCODE_5) {
+            return "SDL_SCANCODE_5";
+        } else if (value == SDL_SCANCODE_6) {
+            return "SDL_SCANCODE_6";
+        } else if (value == SDL_SCANCODE_7) {
+            return "SDL_SCANCODE_7";
+        } else if (value == SDL_SCANCODE_8) {
+            return "SDL_SCANCODE_8";
+        } else if (value == SDL_SCANCODE_9) {
+            return "SDL_SCANCODE_9";
+        } else if (value == SDL_SCANCODE_0) {
+            return "SDL_SCANCODE_0";
+        } else if (value == SDL_SCANCODE_RETURN) {
+            return "SDL_SCANCODE_RETURN";
+        } else if (value == SDL_SCANCODE_ESCAPE) {
+            return "SDL_SCANCODE_ESCAPE";
+        } else if (value == SDL_SCANCODE_BACKSPACE) {
+            return "SDL_SCANCODE_BACKSPACE";
+        } else if (value == SDL_SCANCODE_TAB) {
+            return "SDL_SCANCODE_TAB";
+        } else if (value == SDL_SCANCODE_SPACE) {
+            return "SDL_SCANCODE_SPACE";
+        } else if (value == SDL_SCANCODE_MINUS) {
+            return "SDL_SCANCODE_MINUS";
+        } else if (value == SDL_SCANCODE_EQUALS) {
+            return "SDL_SCANCODE_EQUALS";
+        } else if (value == SDL_SCANCODE_LEFTBRACKET) {
+            return "SDL_SCANCODE_LEFTBRACKET";
+        } else if (value == SDL_SCANCODE_RIGHTBRACKET) {
+            return "SDL_SCANCODE_RIGHTBRACKET";
+        } else if (value == SDL_SCANCODE_BACKSLASH) {
+            return "SDL_SCANCODE_BACKSLASH";
+        } else if (value == SDL_SCANCODE_NONUSHASH) {
+            return "SDL_SCANCODE_NONUSHASH";
+        } else if (value == SDL_SCANCODE_SEMICOLON) {
+            return "SDL_SCANCODE_SEMICOLON";
+        } else if (value == SDL_SCANCODE_APOSTROPHE) {
+            return "SDL_SCANCODE_APOSTROPHE";
+        } else if (value == SDL_SCANCODE_GRAVE) {
+            return "SDL_SCANCODE_GRAVE";
+        } else if (value == SDL_SCANCODE_COMMA) {
+            return "SDL_SCANCODE_COMMA";
+        } else if (value == SDL_SCANCODE_PERIOD) {
+            return "SDL_SCANCODE_PERIOD";
+        } else if (value == SDL_SCANCODE_SLASH) {
+            return "SDL_SCANCODE_SLASH";
+        } else if (value == SDL_SCANCODE_CAPSLOCK) {
+            return "SDL_SCANCODE_CAPSLOCK";
+        } else if (value == SDL_SCANCODE_F1) {
+            return "SDL_SCANCODE_F1";
+        } else if (value == SDL_SCANCODE_F2) {
+            return "SDL_SCANCODE_F2";
+        } else if (value == SDL_SCANCODE_F3) {
+            return "SDL_SCANCODE_F3";
+        } else if (value == SDL_SCANCODE_F4) {
+            return "SDL_SCANCODE_F4";
+        } else if (value == SDL_SCANCODE_F5) {
+            return "SDL_SCANCODE_F5";
+        } else if (value == SDL_SCANCODE_F6) {
+            return "SDL_SCANCODE_F6";
+        } else if (value == SDL_SCANCODE_F7) {
+            return "SDL_SCANCODE_F7";
+        } else if (value == SDL_SCANCODE_F8) {
+            return "SDL_SCANCODE_F8";
+        } else if (value == SDL_SCANCODE_F9) {
+            return "SDL_SCANCODE_F9";
+        } else if (value == SDL_SCANCODE_F10) {
+            return "SDL_SCANCODE_F10";
+        } else if (value == SDL_SCANCODE_F11) {
+            return "SDL_SCANCODE_F11";
+        } else if (value == SDL_SCANCODE_F12) {
+            return "SDL_SCANCODE_F12";
+        } else if (value == SDL_SCANCODE_PRINTSCREEN) {
+            return "SDL_SCANCODE_PRINTSCREEN";
+        } else if (value == SDL_SCANCODE_SCROLLLOCK) {
+            return "SDL_SCANCODE_SCROLLLOCK";
+        } else if (value == SDL_SCANCODE_PAUSE) {
+            return "SDL_SCANCODE_PAUSE";
+        } else if (value == SDL_SCANCODE_INSERT) {
+            return "SDL_SCANCODE_INSERT";
+        } else if (value == SDL_SCANCODE_HOME) {
+            return "SDL_SCANCODE_HOME";
+        } else if (value == SDL_SCANCODE_PAGEUP) {
+            return "SDL_SCANCODE_PAGEUP";
+        } else if (value == SDL_SCANCODE_DELETE) {
+            return "SDL_SCANCODE_DELETE";
+        } else if (value == SDL_SCANCODE_END) {
+            return "SDL_SCANCODE_END";
+        } else if (value == SDL_SCANCODE_PAGEDOWN) {
+            return "SDL_SCANCODE_PAGEDOWN";
+        } else if (value == SDL_SCANCODE_RIGHT) {
+            return "SDL_SCANCODE_RIGHT";
+        } else if (value == SDL_SCANCODE_LEFT) {
+            return "SDL_SCANCODE_LEFT";
+        } else if (value == SDL_SCANCODE_DOWN) {
+            return "SDL_SCANCODE_DOWN";
+        } else if (value == SDL_SCANCODE_UP) {
+            return "SDL_SCANCODE_UP";
+        } else if (value == SDL_SCANCODE_NUMLOCKCLEAR) {
+            return "SDL_SCANCODE_NUMLOCKCLEAR";
+        } else if (value == SDL_SCANCODE_KP_DIVIDE) {
+            return "SDL_SCANCODE_KP_DIVIDE";
+        } else if (value == SDL_SCANCODE_KP_MULTIPLY) {
+            return "SDL_SCANCODE_KP_MULTIPLY";
+        } else if (value == SDL_SCANCODE_KP_MINUS) {
+            return "SDL_SCANCODE_KP_MINUS";
+        } else if (value == SDL_SCANCODE_KP_PLUS) {
+            return "SDL_SCANCODE_KP_PLUS";
+        } else if (value == SDL_SCANCODE_KP_ENTER) {
+            return "SDL_SCANCODE_KP_ENTER";
+        } else if (value == SDL_SCANCODE_KP_1) {
+            return "SDL_SCANCODE_KP_1";
+        } else if (value == SDL_SCANCODE_KP_2) {
+            return "SDL_SCANCODE_KP_2";
+        } else if (value == SDL_SCANCODE_KP_3) {
+            return "SDL_SCANCODE_KP_3";
+        } else if (value == SDL_SCANCODE_KP_4) {
+            return "SDL_SCANCODE_KP_4";
+        } else if (value == SDL_SCANCODE_KP_5) {
+            return "SDL_SCANCODE_KP_5";
+        } else if (value == SDL_SCANCODE_KP_6) {
+            return "SDL_SCANCODE_KP_6";
+        } else if (value == SDL_SCANCODE_KP_7) {
+            return "SDL_SCANCODE_KP_7";
+        } else if (value == SDL_SCANCODE_KP_8) {
+            return "SDL_SCANCODE_KP_8";
+        } else if (value == SDL_SCANCODE_KP_9) {
+            return "SDL_SCANCODE_KP_9";
+        } else if (value == SDL_SCANCODE_KP_0) {
+            return "SDL_SCANCODE_KP_0";
+        } else if (value == SDL_SCANCODE_KP_PERIOD) {
+            return "SDL_SCANCODE_KP_PERIOD";
+        } else if (value == SDL_SCANCODE_NONUSBACKSLASH) {
+            return "SDL_SCANCODE_NONUSBACKSLASH";
+        } else if (value == SDL_SCANCODE_APPLICATION) {
+            return "SDL_SCANCODE_APPLICATION";
+        } else if (value == SDL_SCANCODE_POWER) {
+            return "SDL_SCANCODE_POWER";
+        } else if (value == SDL_SCANCODE_KP_EQUALS) {
+            return "SDL_SCANCODE_KP_EQUALS";
+        } else if (value == SDL_SCANCODE_F13) {
+            return "SDL_SCANCODE_F13";
+        } else if (value == SDL_SCANCODE_F14) {
+            return "SDL_SCANCODE_F14";
+        } else if (value == SDL_SCANCODE_F15) {
+            return "SDL_SCANCODE_F15";
+        } else if (value == SDL_SCANCODE_F16) {
+            return "SDL_SCANCODE_F16";
+        } else if (value == SDL_SCANCODE_F17) {
+            return "SDL_SCANCODE_F17";
+        } else if (value == SDL_SCANCODE_F18) {
+            return "SDL_SCANCODE_F18";
+        } else if (value == SDL_SCANCODE_F19) {
+            return "SDL_SCANCODE_F19";
+        } else if (value == SDL_SCANCODE_F20) {
+            return "SDL_SCANCODE_F20";
+        } else if (value == SDL_SCANCODE_F21) {
+            return "SDL_SCANCODE_F21";
+        } else if (value == SDL_SCANCODE_F22) {
+            return "SDL_SCANCODE_F22";
+        } else if (value == SDL_SCANCODE_F23) {
+            return "SDL_SCANCODE_F23";
+        } else if (value == SDL_SCANCODE_F24) {
+            return "SDL_SCANCODE_F24";
+        } else if (value == SDL_SCANCODE_EXECUTE) {
+            return "SDL_SCANCODE_EXECUTE";
+        } else if (value == SDL_SCANCODE_HELP) {
+            return "SDL_SCANCODE_HELP";
+        } else if (value == SDL_SCANCODE_MENU) {
+            return "SDL_SCANCODE_MENU";
+        } else if (value == SDL_SCANCODE_SELECT) {
+            return "SDL_SCANCODE_SELECT";
+        } else if (value == SDL_SCANCODE_STOP) {
+            return "SDL_SCANCODE_STOP";
+        } else if (value == SDL_SCANCODE_AGAIN) {
+            return "SDL_SCANCODE_AGAIN";
+        } else if (value == SDL_SCANCODE_UNDO) {
+            return "SDL_SCANCODE_UNDO";
+        } else if (value == SDL_SCANCODE_CUT) {
+            return "SDL_SCANCODE_CUT";
+        } else if (value == SDL_SCANCODE_COPY) {
+            return "SDL_SCANCODE_COPY";
+        } else if (value == SDL_SCANCODE_PASTE) {
+            return "SDL_SCANCODE_PASTE";
+        } else if (value == SDL_SCANCODE_FIND) {
+            return "SDL_SCANCODE_FIND";
+        } else if (value == SDL_SCANCODE_MUTE) {
+            return "SDL_SCANCODE_MUTE";
+        } else if (value == SDL_SCANCODE_VOLUMEUP) {
+            return "SDL_SCANCODE_VOLUMEUP";
+        } else if (value == SDL_SCANCODE_VOLUMEDOWN) {
+            return "SDL_SCANCODE_VOLUMEDOWN";
+        } else if (value == SDL_SCANCODE_KP_COMMA) {
+            return "SDL_SCANCODE_KP_COMMA";
+        } else if (value == SDL_SCANCODE_KP_EQUALSAS400) {
+            return "SDL_SCANCODE_KP_EQUALSAS400";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL1) {
+            return "SDL_SCANCODE_INTERNATIONAL1";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL2) {
+            return "SDL_SCANCODE_INTERNATIONAL2";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL3) {
+            return "SDL_SCANCODE_INTERNATIONAL3";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL4) {
+            return "SDL_SCANCODE_INTERNATIONAL4";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL5) {
+            return "SDL_SCANCODE_INTERNATIONAL5";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL6) {
+            return "SDL_SCANCODE_INTERNATIONAL6";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL7) {
+            return "SDL_SCANCODE_INTERNATIONAL7";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL8) {
+            return "SDL_SCANCODE_INTERNATIONAL8";
+        } else if (value == SDL_SCANCODE_INTERNATIONAL9) {
+            return "SDL_SCANCODE_INTERNATIONAL9";
+        } else if (value == SDL_SCANCODE_LANG1) {
+            return "SDL_SCANCODE_LANG1";
+        } else if (value == SDL_SCANCODE_LANG2) {
+            return "SDL_SCANCODE_LANG2";
+        } else if (value == SDL_SCANCODE_LANG3) {
+            return "SDL_SCANCODE_LANG3";
+        } else if (value == SDL_SCANCODE_LANG4) {
+            return "SDL_SCANCODE_LANG4";
+        } else if (value == SDL_SCANCODE_LANG5) {
+            return "SDL_SCANCODE_LANG5";
+        } else if (value == SDL_SCANCODE_LANG6) {
+            return "SDL_SCANCODE_LANG6";
+        } else if (value == SDL_SCANCODE_LANG7) {
+            return "SDL_SCANCODE_LANG7";
+        } else if (value == SDL_SCANCODE_LANG8) {
+            return "SDL_SCANCODE_LANG8";
+        } else if (value == SDL_SCANCODE_LANG9) {
+            return "SDL_SCANCODE_LANG9";
+        } else if (value == SDL_SCANCODE_ALTERASE) {
+            return "SDL_SCANCODE_ALTERASE";
+        } else if (value == SDL_SCANCODE_SYSREQ) {
+            return "SDL_SCANCODE_SYSREQ";
+        } else if (value == SDL_SCANCODE_CANCEL) {
+            return "SDL_SCANCODE_CANCEL";
+        } else if (value == SDL_SCANCODE_CLEAR) {
+            return "SDL_SCANCODE_CLEAR";
+        } else if (value == SDL_SCANCODE_PRIOR) {
+            return "SDL_SCANCODE_PRIOR";
+        } else if (value == SDL_SCANCODE_RETURN2) {
+            return "SDL_SCANCODE_RETURN2";
+        } else if (value == SDL_SCANCODE_SEPARATOR) {
+            return "SDL_SCANCODE_SEPARATOR";
+        } else if (value == SDL_SCANCODE_OUT) {
+            return "SDL_SCANCODE_OUT";
+        } else if (value == SDL_SCANCODE_OPER) {
+            return "SDL_SCANCODE_OPER";
+        } else if (value == SDL_SCANCODE_CLEARAGAIN) {
+            return "SDL_SCANCODE_CLEARAGAIN";
+        } else if (value == SDL_SCANCODE_CRSEL) {
+            return "SDL_SCANCODE_CRSEL";
+        } else if (value == SDL_SCANCODE_EXSEL) {
+            return "SDL_SCANCODE_EXSEL";
+        } else if (value == SDL_SCANCODE_KP_00) {
+            return "SDL_SCANCODE_KP_00";
+        } else if (value == SDL_SCANCODE_KP_000) {
+            return "SDL_SCANCODE_KP_000";
+        } else if (value == SDL_SCANCODE_THOUSANDSSEPARATOR) {
+            return "SDL_SCANCODE_THOUSANDSSEPARATOR";
+        } else if (value == SDL_SCANCODE_DECIMALSEPARATOR) {
+            return "SDL_SCANCODE_DECIMALSEPARATOR";
+        } else if (value == SDL_SCANCODE_CURRENCYUNIT) {
+            return "SDL_SCANCODE_CURRENCYUNIT";
+        } else if (value == SDL_SCANCODE_CURRENCYSUBUNIT) {
+            return "SDL_SCANCODE_CURRENCYSUBUNIT";
+        } else if (value == SDL_SCANCODE_KP_LEFTPAREN) {
+            return "SDL_SCANCODE_KP_LEFTPAREN";
+        } else if (value == SDL_SCANCODE_KP_RIGHTPAREN) {
+            return "SDL_SCANCODE_KP_RIGHTPAREN";
+        } else if (value == SDL_SCANCODE_KP_LEFTBRACE) {
+            return "SDL_SCANCODE_KP_LEFTBRACE";
+        } else if (value == SDL_SCANCODE_KP_RIGHTBRACE) {
+            return "SDL_SCANCODE_KP_RIGHTBRACE";
+        } else if (value == SDL_SCANCODE_KP_TAB) {
+            return "SDL_SCANCODE_KP_TAB";
+        } else if (value == SDL_SCANCODE_KP_BACKSPACE) {
+            return "SDL_SCANCODE_KP_BACKSPACE";
+        } else if (value == SDL_SCANCODE_KP_A) {
+            return "SDL_SCANCODE_KP_A";
+        } else if (value == SDL_SCANCODE_KP_B) {
+            return "SDL_SCANCODE_KP_B";
+        } else if (value == SDL_SCANCODE_KP_C) {
+            return "SDL_SCANCODE_KP_C";
+        } else if (value == SDL_SCANCODE_KP_D) {
+            return "SDL_SCANCODE_KP_D";
+        } else if (value == SDL_SCANCODE_KP_E) {
+            return "SDL_SCANCODE_KP_E";
+        } else if (value == SDL_SCANCODE_KP_F) {
+            return "SDL_SCANCODE_KP_F";
+        } else if (value == SDL_SCANCODE_KP_XOR) {
+            return "SDL_SCANCODE_KP_XOR";
+        } else if (value == SDL_SCANCODE_KP_POWER) {
+            return "SDL_SCANCODE_KP_POWER";
+        } else if (value == SDL_SCANCODE_KP_PERCENT) {
+            return "SDL_SCANCODE_KP_PERCENT";
+        } else if (value == SDL_SCANCODE_KP_LESS) {
+            return "SDL_SCANCODE_KP_LESS";
+        } else if (value == SDL_SCANCODE_KP_GREATER) {
+            return "SDL_SCANCODE_KP_GREATER";
+        } else if (value == SDL_SCANCODE_KP_AMPERSAND) {
+            return "SDL_SCANCODE_KP_AMPERSAND";
+        } else if (value == SDL_SCANCODE_KP_DBLAMPERSAND) {
+            return "SDL_SCANCODE_KP_DBLAMPERSAND";
+        } else if (value == SDL_SCANCODE_KP_VERTICALBAR) {
+            return "SDL_SCANCODE_KP_VERTICALBAR";
+        } else if (value == SDL_SCANCODE_KP_DBLVERTICALBAR) {
+            return "SDL_SCANCODE_KP_DBLVERTICALBAR";
+        } else if (value == SDL_SCANCODE_KP_COLON) {
+            return "SDL_SCANCODE_KP_COLON";
+        } else if (value == SDL_SCANCODE_KP_HASH) {
+            return "SDL_SCANCODE_KP_HASH";
+        } else if (value == SDL_SCANCODE_KP_SPACE) {
+            return "SDL_SCANCODE_KP_SPACE";
+        } else if (value == SDL_SCANCODE_KP_AT) {
+            return "SDL_SCANCODE_KP_AT";
+        } else if (value == SDL_SCANCODE_KP_EXCLAM) {
+            return "SDL_SCANCODE_KP_EXCLAM";
+        } else if (value == SDL_SCANCODE_KP_MEMSTORE) {
+            return "SDL_SCANCODE_KP_MEMSTORE";
+        } else if (value == SDL_SCANCODE_KP_MEMRECALL) {
+            return "SDL_SCANCODE_KP_MEMRECALL";
+        } else if (value == SDL_SCANCODE_KP_MEMCLEAR) {
+            return "SDL_SCANCODE_KP_MEMCLEAR";
+        } else if (value == SDL_SCANCODE_KP_MEMADD) {
+            return "SDL_SCANCODE_KP_MEMADD";
+        } else if (value == SDL_SCANCODE_KP_MEMSUBTRACT) {
+            return "SDL_SCANCODE_KP_MEMSUBTRACT";
+        } else if (value == SDL_SCANCODE_KP_MEMMULTIPLY) {
+            return "SDL_SCANCODE_KP_MEMMULTIPLY";
+        } else if (value == SDL_SCANCODE_KP_MEMDIVIDE) {
+            return "SDL_SCANCODE_KP_MEMDIVIDE";
+        } else if (value == SDL_SCANCODE_KP_PLUSMINUS) {
+            return "SDL_SCANCODE_KP_PLUSMINUS";
+        } else if (value == SDL_SCANCODE_KP_CLEAR) {
+            return "SDL_SCANCODE_KP_CLEAR";
+        } else if (value == SDL_SCANCODE_KP_CLEARENTRY) {
+            return "SDL_SCANCODE_KP_CLEARENTRY";
+        } else if (value == SDL_SCANCODE_KP_BINARY) {
+            return "SDL_SCANCODE_KP_BINARY";
+        } else if (value == SDL_SCANCODE_KP_OCTAL) {
+            return "SDL_SCANCODE_KP_OCTAL";
+        } else if (value == SDL_SCANCODE_KP_DECIMAL) {
+            return "SDL_SCANCODE_KP_DECIMAL";
+        } else if (value == SDL_SCANCODE_KP_HEXADECIMAL) {
+            return "SDL_SCANCODE_KP_HEXADECIMAL";
+        } else if (value == SDL_SCANCODE_LCTRL) {
+            return "SDL_SCANCODE_LCTRL";
+        } else if (value == SDL_SCANCODE_LSHIFT) {
+            return "SDL_SCANCODE_LSHIFT";
+        } else if (value == SDL_SCANCODE_LALT) {
+            return "SDL_SCANCODE_LALT";
+        } else if (value == SDL_SCANCODE_LGUI) {
+            return "SDL_SCANCODE_LGUI";
+        } else if (value == SDL_SCANCODE_RCTRL) {
+            return "SDL_SCANCODE_RCTRL";
+        } else if (value == SDL_SCANCODE_RSHIFT) {
+            return "SDL_SCANCODE_RSHIFT";
+        } else if (value == SDL_SCANCODE_RALT) {
+            return "SDL_SCANCODE_RALT";
+        } else if (value == SDL_SCANCODE_RGUI) {
+            return "SDL_SCANCODE_RGUI";
+        } else if (value == SDL_SCANCODE_MODE) {
+            return "SDL_SCANCODE_MODE";
+        } else if (value == SDL_SCANCODE_AUDIONEXT) {
+            return "SDL_SCANCODE_AUDIONEXT";
+        } else if (value == SDL_SCANCODE_AUDIOPREV) {
+            return "SDL_SCANCODE_AUDIOPREV";
+        } else if (value == SDL_SCANCODE_AUDIOSTOP) {
+            return "SDL_SCANCODE_AUDIOSTOP";
+        } else if (value == SDL_SCANCODE_AUDIOPLAY) {
+            return "SDL_SCANCODE_AUDIOPLAY";
+        } else if (value == SDL_SCANCODE_AUDIOMUTE) {
+            return "SDL_SCANCODE_AUDIOMUTE";
+        } else if (value == SDL_SCANCODE_MEDIASELECT) {
+            return "SDL_SCANCODE_MEDIASELECT";
+        } else if (value == SDL_SCANCODE_WWW) {
+            return "SDL_SCANCODE_WWW";
+        } else if (value == SDL_SCANCODE_MAIL) {
+            return "SDL_SCANCODE_MAIL";
+        } else if (value == SDL_SCANCODE_CALCULATOR) {
+            return "SDL_SCANCODE_CALCULATOR";
+        } else if (value == SDL_SCANCODE_COMPUTER) {
+            return "SDL_SCANCODE_COMPUTER";
+        } else if (value == SDL_SCANCODE_AC_SEARCH) {
+            return "SDL_SCANCODE_AC_SEARCH";
+        } else if (value == SDL_SCANCODE_AC_HOME) {
+            return "SDL_SCANCODE_AC_HOME";
+        } else if (value == SDL_SCANCODE_AC_BACK) {
+            return "SDL_SCANCODE_AC_BACK";
+        } else if (value == SDL_SCANCODE_AC_FORWARD) {
+            return "SDL_SCANCODE_AC_FORWARD";
+        } else if (value == SDL_SCANCODE_AC_STOP) {
+            return "SDL_SCANCODE_AC_STOP";
+        } else if (value == SDL_SCANCODE_AC_REFRESH) {
+            return "SDL_SCANCODE_AC_REFRESH";
+        } else if (value == SDL_SCANCODE_AC_BOOKMARKS) {
+            return "SDL_SCANCODE_AC_BOOKMARKS";
+        } else if (value == SDL_SCANCODE_BRIGHTNESSDOWN) {
+            return "SDL_SCANCODE_BRIGHTNESSDOWN";
+        } else if (value == SDL_SCANCODE_BRIGHTNESSUP) {
+            return "SDL_SCANCODE_BRIGHTNESSUP";
+        } else if (value == SDL_SCANCODE_DISPLAYSWITCH) {
+            return "SDL_SCANCODE_DISPLAYSWITCH";
+        } else if (value == SDL_SCANCODE_KBDILLUMTOGGLE) {
+            return "SDL_SCANCODE_KBDILLUMTOGGLE";
+        } else if (value == SDL_SCANCODE_KBDILLUMDOWN) {
+            return "SDL_SCANCODE_KBDILLUMDOWN";
+        } else if (value == SDL_SCANCODE_KBDILLUMUP) {
+            return "SDL_SCANCODE_KBDILLUMUP";
+        } else if (value == SDL_SCANCODE_EJECT) {
+            return "SDL_SCANCODE_EJECT";
+        } else if (value == SDL_SCANCODE_SLEEP) {
+            return "SDL_SCANCODE_SLEEP";
+        } else if (value == SDL_SCANCODE_APP1) {
+            return "SDL_SCANCODE_APP1";
+        } else if (value == SDL_SCANCODE_APP2) {
+            return "SDL_SCANCODE_APP2";
+        } else if (value == SDL_SCANCODE_AUDIOREWIND) {
+            return "SDL_SCANCODE_AUDIOREWIND";
+        } else if (value == SDL_SCANCODE_AUDIOFASTFORWARD) {
+            return "SDL_SCANCODE_AUDIOFASTFORWARD";
+        } else if (value == SDL_SCANCODE_SOFTLEFT) {
+            return "SDL_SCANCODE_SOFTLEFT";
+        } else if (value == SDL_SCANCODE_SOFTRIGHT) {
+            return "SDL_SCANCODE_SOFTRIGHT";
+        } else if (value == SDL_SCANCODE_CALL) {
+            return "SDL_SCANCODE_CALL";
+        } else if (value == SDL_SCANCODE_ENDCALL) {
+            return "SDL_SCANCODE_ENDCALL";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_Scancode() {
     }

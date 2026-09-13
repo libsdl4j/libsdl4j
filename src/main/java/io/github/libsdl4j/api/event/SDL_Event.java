@@ -50,6 +50,7 @@ import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEADD
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEREMAPPED;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERDEVICEREMOVED;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERSENSORUPDATE;
+import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERSTEAMHANDLEUPDATED;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERTOUCHPADDOWN;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERTOUCHPADMOTION;
 import static io.github.libsdl4j.api.event.SDL_EventType.SDL_CONTROLLERTOUCHPADUP;
@@ -195,6 +196,7 @@ public final class SDL_Event extends Union {
     /** Quit request event data */
     public SDL_QuitEvent quit;
 
+    /** OS specific event data */
     public SDL_OSEvent os;
 
     /** Custom event data */
@@ -293,6 +295,7 @@ public final class SDL_Event extends Union {
             case SDL_CONTROLLERDEVICEADDED:
             case SDL_CONTROLLERDEVICEREMOVED:
             case SDL_CONTROLLERDEVICEREMAPPED:
+            case SDL_CONTROLLERSTEAMHANDLEUPDATED:
                 setType(SDL_ControllerDeviceEvent.class);
                 break;
             case SDL_CONTROLLERTOUCHPADDOWN:

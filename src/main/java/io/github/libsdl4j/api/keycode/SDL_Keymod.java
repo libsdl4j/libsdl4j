@@ -2,6 +2,7 @@ package io.github.libsdl4j.api.keycode;
 
 import com.sun.jna.ptr.IntByReference;
 import io.github.libsdl4j.jna.JnaEnum;
+import io.github.libsdl4j.jna.JnaUtils;
 import org.intellij.lang.annotations.MagicConstant;
 
 /**
@@ -30,7 +31,53 @@ public final class SDL_Keymod implements JnaEnum {
 
     public static final int KMOD_RESERVED = KMOD_SCROLL;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == KMOD_NONE) {
+            return "KMOD_NONE";
+        }
+        StringBuilder result = new StringBuilder(11);
+        if ((value & KMOD_LSHIFT) > 0) {
+            JnaUtils.append(result, "KMOD_LSHIFT");
+        }
+        if ((value & KMOD_RSHIFT) > 0) {
+            JnaUtils.append(result, "KMOD_RSHIFT");
+        }
+        if ((value & KMOD_LCTRL) > 0) {
+            JnaUtils.append(result, "KMOD_LCTRL");
+        }
+        if ((value & KMOD_RCTRL) > 0) {
+            JnaUtils.append(result, "KMOD_RCTRL");
+        }
+        if ((value & KMOD_LALT) > 0) {
+            JnaUtils.append(result, "KMOD_LALT");
+        }
+        if ((value & KMOD_RALT) > 0) {
+            JnaUtils.append(result, "KMOD_RALT");
+        }
+        if ((value & KMOD_LGUI) > 0) {
+            JnaUtils.append(result, "KMOD_LGUI");
+        }
+        if ((value & KMOD_RGUI) > 0) {
+            JnaUtils.append(result, "KMOD_RGUI");
+        }
+        if ((value & KMOD_NUM) > 0) {
+            JnaUtils.append(result, "KMOD_NUM");
+        }
+        if ((value & KMOD_CAPS) > 0) {
+            JnaUtils.append(result, "KMOD_CAPS");
+        }
+        if ((value & KMOD_MODE) > 0) {
+            JnaUtils.append(result, "KMOD_MODE");
+        }
+        if ((value & KMOD_SCROLL) > 0) {
+            JnaUtils.append(result, "KMOD_SCROLL");
+        }
+        if (result.length() != 0) {
+            return result.toString();
+        } else {
+            return JnaUtils.flagsUnknown(value);
+        }
+    }
 
     private SDL_Keymod() {
     }

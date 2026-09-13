@@ -68,9 +68,51 @@ public final class SDL_WindowEventID implements JnaEnum {
     public static final int SDL_WINDOWEVENT_ICCPROF_CHANGED = 17;
 
     /** Window has been moved to display data1. */
-    public static final int SDL_WINDOWEVENT_DISPLAY_CHANGE = 18;
+    public static final int SDL_WINDOWEVENT_DISPLAY_CHANGED = 18;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_WINDOWEVENT_NONE) {
+            return "SDL_WINDOWEVENT_NONE";
+        } else if (value == SDL_WINDOWEVENT_SHOWN) {
+            return "SDL_WINDOWEVENT_SHOWN";
+        } else if (value == SDL_WINDOWEVENT_HIDDEN) {
+            return "SDL_WINDOWEVENT_HIDDEN";
+        } else if (value == SDL_WINDOWEVENT_EXPOSED) {
+            return "SDL_WINDOWEVENT_EXPOSED";
+        } else if (value == SDL_WINDOWEVENT_MOVED) {
+            return "SDL_WINDOWEVENT_MOVED";
+        } else if (value == SDL_WINDOWEVENT_RESIZED) {
+            return "SDL_WINDOWEVENT_RESIZED";
+        } else if (value == SDL_WINDOWEVENT_SIZE_CHANGED) {
+            return "SDL_WINDOWEVENT_SIZE_CHANGED";
+        } else if (value == SDL_WINDOWEVENT_MINIMIZED) {
+            return "SDL_WINDOWEVENT_MINIMIZED";
+        } else if (value == SDL_WINDOWEVENT_MAXIMIZED) {
+            return "SDL_WINDOWEVENT_MAXIMIZED";
+        } else if (value == SDL_WINDOWEVENT_RESTORED) {
+            return "SDL_WINDOWEVENT_RESTORED";
+        } else if (value == SDL_WINDOWEVENT_ENTER) {
+            return "SDL_WINDOWEVENT_ENTER";
+        } else if (value == SDL_WINDOWEVENT_LEAVE) {
+            return "SDL_WINDOWEVENT_LEAVE";
+        } else if (value == SDL_WINDOWEVENT_FOCUS_GAINED) {
+            return "SDL_WINDOWEVENT_FOCUS_GAINED";
+        } else if (value == SDL_WINDOWEVENT_FOCUS_LOST) {
+            return "SDL_WINDOWEVENT_FOCUS_LOST";
+        } else if (value == SDL_WINDOWEVENT_CLOSE) {
+            return "SDL_WINDOWEVENT_CLOSE";
+        } else if (value == SDL_WINDOWEVENT_TAKE_FOCUS) {
+            return "SDL_WINDOWEVENT_TAKE_FOCUS";
+        } else if (value == SDL_WINDOWEVENT_HIT_TEST) {
+            return "SDL_WINDOWEVENT_HIT_TEST";
+        } else if (value == SDL_WINDOWEVENT_ICCPROF_CHANGED) {
+            return "SDL_WINDOWEVENT_ICCPROF_CHANGED";
+        } else if (value == SDL_WINDOWEVENT_DISPLAY_CHANGED) {
+            return "SDL_WINDOWEVENT_DISPLAY_CHANGED";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_WindowEventID() {
     }

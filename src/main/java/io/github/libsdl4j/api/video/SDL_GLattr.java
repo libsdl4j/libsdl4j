@@ -50,7 +50,67 @@ public final class SDL_GLattr implements JnaEnum {
 
     public static final int SDL_GL_FLOATBUFFERS = 27;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_GL_RED_SIZE) {
+            return "SDL_GL_RED_SIZE";
+        } else if (value == SDL_GL_GREEN_SIZE) {
+            return "SDL_GL_GREEN_SIZE";
+        } else if (value == SDL_GL_BLUE_SIZE) {
+            return "SDL_GL_BLUE_SIZE";
+        } else if (value == SDL_GL_ALPHA_SIZE) {
+            return "SDL_GL_ALPHA_SIZE";
+        } else if (value == SDL_GL_BUFFER_SIZE) {
+            return "SDL_GL_BUFFER_SIZE";
+        } else if (value == SDL_GL_DOUBLEBUFFER) {
+            return "SDL_GL_DOUBLEBUFFER";
+        } else if (value == SDL_GL_DEPTH_SIZE) {
+            return "SDL_GL_DEPTH_SIZE";
+        } else if (value == SDL_GL_STENCIL_SIZE) {
+            return "SDL_GL_STENCIL_SIZE";
+        } else if (value == SDL_GL_ACCUM_RED_SIZE) {
+            return "SDL_GL_ACCUM_RED_SIZE";
+        } else if (value == SDL_GL_ACCUM_GREEN_SIZE) {
+            return "SDL_GL_ACCUM_GREEN_SIZE";
+        } else if (value == SDL_GL_ACCUM_BLUE_SIZE) {
+            return "SDL_GL_ACCUM_BLUE_SIZE";
+        } else if (value == SDL_GL_ACCUM_ALPHA_SIZE) {
+            return "SDL_GL_ACCUM_ALPHA_SIZE";
+        } else if (value == SDL_GL_STEREO) {
+            return "SDL_GL_STEREO";
+        } else if (value == SDL_GL_MULTISAMPLEBUFFERS) {
+            return "SDL_GL_MULTISAMPLEBUFFERS";
+        } else if (value == SDL_GL_MULTISAMPLESAMPLES) {
+            return "SDL_GL_MULTISAMPLESAMPLES";
+        } else if (value == SDL_GL_ACCELERATED_VISUAL) {
+            return "SDL_GL_ACCELERATED_VISUAL";
+        } else if (value == SDL_GL_RETAINED_BACKING) {
+            return "SDL_GL_RETAINED_BACKING";
+        } else if (value == SDL_GL_CONTEXT_MAJOR_VERSION) {
+            return "SDL_GL_CONTEXT_MAJOR_VERSION";
+        } else if (value == SDL_GL_CONTEXT_MINOR_VERSION) {
+            return "SDL_GL_CONTEXT_MINOR_VERSION";
+        } else if (value == SDL_GL_CONTEXT_EGL) {
+            return "SDL_GL_CONTEXT_EGL";
+        } else if (value == SDL_GL_CONTEXT_FLAGS) {
+            return "SDL_GL_CONTEXT_FLAGS";
+        } else if (value == SDL_GL_CONTEXT_PROFILE_MASK) {
+            return "SDL_GL_CONTEXT_PROFILE_MASK";
+        } else if (value == SDL_GL_SHARE_WITH_CURRENT_CONTEXT) {
+            return "SDL_GL_SHARE_WITH_CURRENT_CONTEXT";
+        } else if (value == SDL_GL_FRAMEBUFFER_SRGB_CAPABLE) {
+            return "SDL_GL_FRAMEBUFFER_SRGB_CAPABLE";
+        } else if (value == SDL_GL_CONTEXT_RELEASE_BEHAVIOR) {
+            return "SDL_GL_CONTEXT_RELEASE_BEHAVIOR";
+        } else if (value == SDL_GL_CONTEXT_RESET_NOTIFICATION) {
+            return "SDL_GL_CONTEXT_RESET_NOTIFICATION";
+        } else if (value == SDL_GL_CONTEXT_NO_ERROR) {
+            return "SDL_GL_CONTEXT_NO_ERROR";
+        } else if (value == SDL_GL_FLOATBUFFERS) {
+            return "SDL_GL_FLOATBUFFERS";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_GLattr() {
     }

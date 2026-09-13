@@ -22,7 +22,21 @@ public final class SDL_DisplayOrientation implements JnaEnum {
     /** The display is in portrait mode, upside down */
     public static final int SDL_ORIENTATION_PORTRAIT_FLIPPED = 4;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_ORIENTATION_UNKNOWN) {
+            return "SDL_ORIENTATION_UNKNOWN";
+        } else if (value == SDL_ORIENTATION_LANDSCAPE) {
+            return "SDL_ORIENTATION_LANDSCAPE";
+        } else if (value == SDL_ORIENTATION_LANDSCAPE_FLIPPED) {
+            return "SDL_ORIENTATION_LANDSCAPE_FLIPPED";
+        } else if (value == SDL_ORIENTATION_PORTRAIT) {
+            return "SDL_ORIENTATION_PORTRAIT";
+        } else if (value == SDL_ORIENTATION_PORTRAIT_FLIPPED) {
+            return "SDL_ORIENTATION_PORTRAIT_FLIPPED";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_DisplayOrientation() {
     }

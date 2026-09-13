@@ -34,7 +34,19 @@ public final class SDL_HapticDirectionEncoding implements JnaEnum {
      */
     public static final byte SDL_HAPTIC_STEERING_AXIS = 3;
 
-    // TODO: Generate public static String toString(int value)
+    public static String toString(int value) {
+        if (value == SDL_HAPTIC_POLAR) {
+            return "SDL_HAPTIC_POLAR";
+        } else if (value == SDL_HAPTIC_CARTESIAN) {
+            return "SDL_HAPTIC_CARTESIAN";
+        } else if (value == SDL_HAPTIC_SPHERICAL) {
+            return "SDL_HAPTIC_SPHERICAL";
+        } else if (value == SDL_HAPTIC_STEERING_AXIS) {
+            return "SDL_HAPTIC_STEERING_AXIS";
+        } else {
+            return "UNKNOWN(" + value + ")";
+        }
+    }
 
     private SDL_HapticDirectionEncoding() {
     }
